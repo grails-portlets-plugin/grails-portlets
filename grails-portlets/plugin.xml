@@ -1,0 +1,5 @@
+<plugin name='portlets' version='0.1'>
+  <resources>
+    <resource>UrlMappings</resource>
+  </resources>
+</plugin>
