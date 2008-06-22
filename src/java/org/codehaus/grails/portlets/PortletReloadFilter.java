@@ -20,6 +20,7 @@ public class PortletReloadFilter extends GrailsReloadServletFilter {
     public void doFilterInternal(PortletRequest portletRequest,
                                  PortletResponse portletResponse)  {
         try {
+            super.initFilterBean(); //Needed to set context attribute on super class
             super.doFilterInternal((HttpServletRequest) portletRequest,
                     (HttpServletResponse) portletResponse,
                     new NoOpFilterChain());

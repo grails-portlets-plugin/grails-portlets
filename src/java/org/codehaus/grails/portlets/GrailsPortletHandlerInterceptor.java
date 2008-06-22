@@ -10,6 +10,7 @@ import org.springframework.web.portlet.handler.HandlerInterceptorAdapter;
 
 import javax.portlet.*;
 import javax.servlet.ServletContext;
+import javax.servlet.FilterConfig;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -35,7 +36,6 @@ public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter i
     private void beforeHandle(PortletRequest portletRequest, PortletResponse portletResponse) {
         LocaleContextHolder.setLocale(portletRequest.getLocale());
         convertRequestToGrailsWebRequest(portletRequest, portletResponse);
-        //TODO I think this could move to GrailsDispatcherServlet
         if (GrailsUtil.isDevelopmentEnv()) {
             runReloadFilter(portletRequest, portletResponse);
         }

@@ -80,7 +80,7 @@ class PortletsGrailsPlugin {
                 'load-on-startup'('1')
             }
         }
-        
+
         if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
             log.info("Creating Pluto servlets for ${watchedResources.length} portlets...")
             for (Resource portlet in watchedResources) {

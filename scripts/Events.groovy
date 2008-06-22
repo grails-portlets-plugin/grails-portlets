@@ -127,10 +127,10 @@ eventPackagingEnd = {
                             if (hasProperty('shortTitle', instance)) 'short-title'(instance.shortTitle)
                             if (hasProperty('keywords', instance)) 'keywords'(instance.keywords)
                         }
-                        if (hasProperty('preferences', instance) && instance.preferences instanceof Map) {
+                        if (hasProperty('supportedPreferences', instance) && instance.supportedPreferences instanceof Map) {
                             'portlet-preferences'
                             {
-                                instance.preferences.each {prefName, prefValue ->
+                                instance.supportedPreferences.each {prefName, prefValue ->
                                     'preference'
                                     {
                                         'name'(prefName)
