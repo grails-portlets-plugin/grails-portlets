@@ -1,8 +1,10 @@
+import com.bekk.boss.pluto.embedded.jetty.util.PlutoJettySessionManager
 import grails.util.GrailsUtil
 import groovy.xml.MarkupBuilder
 import org.mortbay.jetty.Server
 import org.mortbay.jetty.security.HashUserRealm
 import org.mortbay.jetty.security.UserRealm
+import org.mortbay.jetty.servlet.SessionHandler
 import org.mortbay.jetty.webapp.WebAppContext
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver
 
@@ -18,40 +20,40 @@ if (!new File(pluginLibDir).exists()) {
     }
 }
 
+//FIX config is not loaded until packaging but we need to know this setting for SetClasspath...
 //config.portlet.version = '2'
 
+// default portlet spec to 1.0
 def portletVersion = '1.0'
 def plutoVersion = '1.1.4'
 
-if (config.portlet.version == '2') {
-    portletVersion = '2.0'
-    plutoVersion = '2.0.0-SNAPSHOT'
-}
-
-def underscoredVersion = portletVersion.replaceAll("\\.", "_")
-
-def plutoConfigXml = new File("${pluginLibDir}/pluto-portal-${plutoVersion}/web-inf/pluto-portal-driver-config.xml")
-def confClassList = ["org.mortbay.jetty.webapp.WebInfConfiguration",
-        "org.mortbay.jetty.plus.webapp.EnvConfiguration",
-        "org.mortbay.jetty.plus.webapp.Configuration",
-        "org.mortbay.jetty.webapp.JettyWebXmlConfiguration",
-        "org.mortbay.jetty.webapp.TagLibConfiguration"]
-
 eventConfigureJetty = {Server server ->
-    def grailsContext = server.getHandler()
-    //grailsContext.systemClasses = ["org.apache.pluto.", "org.castor.", "javax.portlet.", "org.springframework."]
+    SessionHandler sh = new SessionHandler();
+    //kindly borrowed from the Maven pluto plugin author Nils-Helge Garli
+    sh.setSessionManager(new PlutoJettySessionManager());
+    server.getHandler().setSessionHandler(sh);
 
     def webContext = new WebAppContext("${pluginLibDir}/pluto-portal-${plutoVersion}", "pluto")
-   // webContext.serverClasses = ["org.springframework."]
-    webContext.systemClasses = ["-org.apache.pluto.driver.","org.apache.pluto.", "javax.portlet.", "javax.servlet.","org.springframework."]
+    webContext.systemClasses = ["-org.apache.pluto.driver.", "org.apache.pluto.", "javax.portlet.", "javax.servlet.", "org.springframework."]
     webContext.contextPath = "/pluto"
+
+    sh = new SessionHandler();
+    sh.setSessionManager(new PlutoJettySessionManager());
+    webContext.setSessionHandler(sh);  
+
     server.addHandler(webContext)
 
     HashUserRealm myrealm = new HashUserRealm("default", "${pluginLibDir}/realm.properties");
     server.setUserRealms([myrealm] as UserRealm[]);
+    println 'jetty'
 }
 
 eventSetClasspath = {rootLoader ->
+    if (config?.portlet?.version == '2') {
+        portletVersion = '2.0'
+        plutoVersion = '2.0.0-SNAPSHOT'
+    }
+    event("StatusUpdate", ["Using Portlet Spec ${portletVersion}"])
     def jars = ["${pluginLibDir}/runtime/castor-1.1.1.jar",
             "${pluginLibDir}/runtime/pluto-container-${plutoVersion}.jar",
             "${pluginLibDir}/runtime/pluto-descriptor-api-${plutoVersion}.jar",
@@ -76,6 +78,7 @@ eventSetClasspath = {rootLoader ->
 }
 
 eventPackagingEnd = {
+    def plutoConfigXml = new File("${pluginLibDir}/pluto-portal-${plutoVersion}/web-inf/pluto-portal-driver-config.xml")
     try {
         def sw = new StringWriter();
         def xmlWriter = new MarkupBuilder(sw);
@@ -86,6 +89,7 @@ eventPackagingEnd = {
             event("StatusUpdate", ["Generating portlet.xml - ${portletFiles.size()} portlets found"])
 
             if (portletXml.exists()) portletXml.delete()
+            def underscoredVersion = portletVersion.replaceAll("\\.", "_")
             xmlWriter.'portlet-app'(version: portletVersion,
                     xmlns: "http://java.sun.com/xml/ns/portlet/portlet-app_${underscoredVersion}.xsd",
                     'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
@@ -223,12 +227,6 @@ def checkRequiredProperties(propertyNames, instance) {
 }
 
 def resolveResources(String pattern) {
-    //try {
     def resolver = new PathMatchingResourcePatternResolver()
     return resolver.getResources(pattern)
-    /*}
-    catch (Throwable e) {
-        e.print
-        return []
-    } */
 }

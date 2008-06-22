@@ -456,6 +456,38 @@
       <SOURCES />
       <jarDirectory url="file://$GRAILS_HOME$/lib" recursive="false" />
     </library>
+    <library name="Pluto2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-descriptor-api-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/jaxb-impl-2.1.3.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-descriptor-impl-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-ant-tasks-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-taglib-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/ccpp-1.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/portlet-api-2.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/activation-1.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/jaxb-api-2.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-container-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/stax-api-1.0-2.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/runtime/pluto-util-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/pluto-portal-driver-2.0.0-SNAPSHOT.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/pluto-portal-driver-impl-2.0.0-SNAPSHOT.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://D:/work/pluto-2.0/pluto-taglib/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-ant-tasks/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-testsuite/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-container/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/maven-pluto-plugin/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-descriptor-impl/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-util/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-descriptor-api/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-portal-driver-impl/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/pluto-portal-driver/src/main/java" />
+        <root url="file://D:/work/pluto-2.0/portlet2-api/src/main/java" />
+      </SOURCES>
+    </library>
   </component>
   <UsedPathMacros>
     <macro name="GRAILS_HOME" />

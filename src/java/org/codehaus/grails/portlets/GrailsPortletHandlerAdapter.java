@@ -36,6 +36,7 @@ public class GrailsPortletHandlerAdapter implements org.springframework.web.port
     }
 
     public ModelAndView handleRender(RenderRequest renderRequest, RenderResponse renderResponse, Object o) throws Exception {
+        //TODO if window mode is minimized should I just render empty string for them?
         GroovyObject portlet = (GroovyObject) o;
         Closure render = (Closure) portlet.getProperty("doRender");
         Object returnValue = render.call();
