@@ -3,7 +3,6 @@ package org.codehaus.grails.portlets;
 import org.springframework.web.portlet.DispatcherPortlet;
 
 import javax.portlet.*;
-import javax.servlet.ServletContext;
 
 /**
  * @author Lee Butts
@@ -20,7 +19,6 @@ public class GrailsDispatcherPortlet extends DispatcherPortlet {
 
     protected void doRenderService(RenderRequest renderRequest, RenderResponse renderResponse) throws Exception {
         addPortletInfoToRequest(renderRequest);
-        //renderRequest.getPortletSession(true);
         super.doRenderService(renderRequest, renderResponse);
     }
 

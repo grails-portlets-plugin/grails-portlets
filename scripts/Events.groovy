@@ -10,7 +10,26 @@ def version = 0.1
 def basedir = System.getProperty("base.dir")
 def portletXml = new File("${basedir}/web-app/web-inf/portlet.xml")
 def pluginLibDir = "${basedir}/plugins/portlets-${version}/lib"
+if (!new File(pluginLibDir).exists()) {
+    //we must not be installed...
+    pluginLibDir = "${basedir}/lib"
+    if (!new File(pluginLibDir).exists()) {
+        throw new RuntimeException('Unable to find Portlets plugin lib folder')
+    }
+}
+
+//config.portlet.version = '2'
+
+def portletVersion = '1.0'
 def plutoVersion = '1.1.4'
+
+if (config.portlet.version == '2') {
+    portletVersion = '2.0'
+    plutoVersion = '2.0.0-SNAPSHOT'
+}
+
+def underscoredVersion = portletVersion.replaceAll("\\.", "_")
+
 def plutoConfigXml = new File("${pluginLibDir}/pluto-portal-${plutoVersion}/web-inf/pluto-portal-driver-config.xml")
 def confClassList = ["org.mortbay.jetty.webapp.WebInfConfiguration",
         "org.mortbay.jetty.plus.webapp.EnvConfiguration",
@@ -20,24 +39,40 @@ def confClassList = ["org.mortbay.jetty.webapp.WebInfConfiguration",
 
 eventConfigureJetty = {Server server ->
     def grailsContext = server.getHandler()
-    grailsContext.systemClasses = ["org.apache.pluto.", "org.castor.", "javax.portlet.", "org.springframework."]
-   
+    //grailsContext.systemClasses = ["org.apache.pluto.", "org.castor.", "javax.portlet.", "org.springframework."]
+
     def webContext = new WebAppContext("${pluginLibDir}/pluto-portal-${plutoVersion}", "pluto")
-
-    System.setProperty('java.endorsed.dirs', "${pluginLibDir}/endorsed")
-    System.setProperty('jetty.class.path', "${pluginLibDir}/castor-1.1.1.jar;" +
-            "${pluginLibDir}/pluto-container-1.1.4.jar;" +
-            "${pluginLibDir}/pluto-descriptor-api-1.1.4.jar;" +
-            "${pluginLibDir}/pluto-descriptor-impl-1.1.4.jar;" +
-            "${pluginLibDir}/pluto-taglib-1.1.4.jar;" +
-            "${pluginLibDir}/portlet-api-1.0.jar;")
-
-    webContext.systemClasses = ["-org.apache.pluto.driver","org.apache.pluto.", "org.castor.", "javax.portlet.", "org.springframework."]
+   // webContext.serverClasses = ["org.springframework."]
+    webContext.systemClasses = ["-org.apache.pluto.driver.","org.apache.pluto.", "javax.portlet.", "javax.servlet.","org.springframework."]
     webContext.contextPath = "/pluto"
     server.addHandler(webContext)
 
     HashUserRealm myrealm = new HashUserRealm("default", "${pluginLibDir}/realm.properties");
     server.setUserRealms([myrealm] as UserRealm[]);
+}
+
+eventSetClasspath = {rootLoader ->
+    def jars = ["${pluginLibDir}/runtime/castor-1.1.1.jar",
+            "${pluginLibDir}/runtime/pluto-container-${plutoVersion}.jar",
+            "${pluginLibDir}/runtime/pluto-descriptor-api-${plutoVersion}.jar",
+            "${pluginLibDir}/runtime/pluto-descriptor-impl-${plutoVersion}.jar",
+            "${pluginLibDir}/runtime/pluto-taglib-${plutoVersion}.jar",
+            "${pluginLibDir}/runtime/portlet-api-${portletVersion}.jar",
+    ]
+    if (portletVersion == '2.0') {
+        jars += ["${pluginLibDir}/runtime/ccpp-1.0.jar",
+                "${pluginLibDir}/runtime/jaxb-api-2.1.jar",
+                "${pluginLibDir}/runtime/activation-1.1.jar",
+                "${pluginLibDir}/runtime/stax-api-1.0-2.jar",
+                "${pluginLibDir}/runtime/jaxb-impl-2.1.3.jar"]
+    }
+    jars.each {jar ->
+        File file = new File(jar)
+        if (!file.exists()) {
+            throw new RuntimeException("Unable to find Portlets lib: $jar")
+        }
+        rootLoader.addURL(file.toURI().toURL());
+    }
 }
 
 eventPackagingEnd = {
@@ -51,10 +86,10 @@ eventPackagingEnd = {
             event("StatusUpdate", ["Generating portlet.xml - ${portletFiles.size()} portlets found"])
 
             if (portletXml.exists()) portletXml.delete()
-            xmlWriter.'portlet-app'(version: '1.0',
-                    xmlns: 'http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd',
+            xmlWriter.'portlet-app'(version: portletVersion,
+                    xmlns: "http://java.sun.com/xml/ns/portlet/portlet-app_${underscoredVersion}.xsd",
                     'xmlns:xsi': 'http://www.w3.org/2001/XMLSchema-instance',
-                    'xsi:schemaLocation': 'http://java.sun.com/xml/ns/portlet/portlet-app_1_0.xsd') {
+                    'xsi:schemaLocation': "http://java.sun.com/xml/ns/portlet/portlet-app_${underscoredVersion}.xsd") {
                 portletFiles.each {portletClassFile ->
                     def className = portletClassFile.filename - '.groovy'
                     Class portletClass = classLoader.loadClass(className)
@@ -69,29 +104,35 @@ eventPackagingEnd = {
                         if (hasProperty('description', instance))
                             'description'(instance.description)
                         'portlet-class'('org.codehaus.grails.portlets.GrailsDispatcherPortlet')
-                        'init-param' {
+                        'init-param'
+                        {
                             'name'('contextClass')
                             'value'('org.codehaus.grails.portlets.GrailsPortletApplicationContext')
                         }
-                        'init-param' {
+                        'init-param'
+                        {
                             'name'('grailsPortletClass')
                             'value'(className)
                         }
-                        'supports' {
+                        'supports'
+                        {
                             'mime-type'('*/*')
                             instance.supports.each {mode ->
                                 'portlet-mode'(mode)
                             }
                         }
-                        'portlet-info' {
+                        'portlet-info'
+                        {
                             'title'(instance.title)
                             if (hasProperty('shortTitle', instance)) 'short-title'(instance.shortTitle)
                             if (hasProperty('keywords', instance)) 'keywords'(instance.keywords)
                         }
                         if (hasProperty('preferences', instance) && instance.preferences instanceof Map) {
-                            'portlet-preferences' {
+                            'portlet-preferences'
+                            {
                                 instance.preferences.each {prefName, prefValue ->
-                                    'preference' {
+                                    'preference'
+                                    {
                                         'name'(prefName)
                                         if (prefValue instanceof List) {
                                             prefValue.each {multiValue ->
@@ -112,7 +153,7 @@ eventPackagingEnd = {
                 }
             }
             portletXml.write(sw.toString())
-            if (GrailsUtil.isDevelopmentEnv()) {
+            if (GrailsUtil.environment == 'development' || GrailsUtil.environment == 'test') {
                 sw = new StringWriter()
                 xmlWriter = new MarkupBuilder(sw)
                 if (plutoConfigXml.exists()) plutoConfigXml.delete()
@@ -124,7 +165,8 @@ eventPackagingEnd = {
                     'portal-name'('pluto-portal-driver')
                     'portal-version'(plutoVersion)
                     'container-name'('Pluto Portal Driver')
-                    'supports' {
+                    'supports'
+                    {
                         'portlet-mode'('view')
                         'portlet-mode'('edit')
                         'portlet-mode'('help')
@@ -145,6 +187,10 @@ eventPackagingEnd = {
                         'page'(name: "About Apache Pluto", uri: "/WEB-INF/themes/pluto-default-theme.jsp") {
                             'portlet'(context: '/pluto', name: 'AboutPortlet')
                         }
+                        'page'(name: "Pluto Admin", uri: "/WEB-INF/themes/pluto-default-theme.jsp") {
+                            'portlet'(context: '/pluto', name: 'PlutoPageAdmin')
+                        }
+
                     }
                 }
                 plutoConfigXml.write(sw.toString())

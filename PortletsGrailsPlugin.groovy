@@ -22,7 +22,7 @@ class PortletsGrailsPlugin {
             ]
 
     def version = 0.1
-    def dependsOn = [controllers: '1.0.1-SNAPSHOT']
+    def dependsOn = [controllers: '1.1-SNAPSHOT']
     def artefacts = [PortletArtefactHandler.class]
 
     def doWithSpring = {
@@ -53,33 +53,39 @@ class PortletsGrailsPlugin {
             interceptors = [ref("portletHandlerInterceptor")]
         }
         portletHandlerAdapter(GrailsPortletHandlerAdapter)
-        portletHandlerInterceptor(GrailsPortletHandlerInterceptor)
+        portletReloadFilter(PortletReloadFilter)
+        portletHandlerInterceptor(GrailsPortletHandlerInterceptor){
+            portletReloadFilter = ref(portletReloadFilter)
+        }
     }
 
     def doWithWebDescriptor = {webXml ->
-        webXml << {
-            'display-name'(WEB_APP_NAME)
-        }
+        def mappingElement = webXml.'servlet-mapping'
+        mappingElement = mappingElement[mappingElement.size()-1]
 
-        webXml << {
+        mappingElement + {
             'servlet-mapping' {
                 'servlet-name'('view-servlet')
                 'url-pattern'('/WEB-INF/servlet/view')
             }
         }
 
-        webXml << {
+        def servletElement = webXml.'servlet'
+        servletElement = servletElement[servletElement.size()-1]
+
+        servletElement + {
             'servlet' {
                 'servlet-name'('view-servlet')
                 'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
                 'load-on-startup'('1')
             }
         }
+        
         if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
             log.info("Creating Pluto servlets for ${watchedResources.length} portlets...")
             for (Resource portlet in watchedResources) {
                 def portletName = portlet.filename - 'Portlet.groovy'
-                webXml << {
+                servletElement + {
                     'servlet' {
                         'servlet-name'(portletName)
                         'servlet-class'('org.apache.pluto.core.PortletServlet')
@@ -90,7 +96,7 @@ class PortletsGrailsPlugin {
                         'load-on-startup'('1')
                     }
                 }
-                webXml << {
+                mappingElement + {
                     'servlet-mapping' {
                         'servlet-name'(portletName)
                         'url-pattern'("/PlutoInvoker/${portletName}")

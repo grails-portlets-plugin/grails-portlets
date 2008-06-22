@@ -15,7 +15,136 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="" />
+    <list default="true" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/about/view.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/pluto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/portlet-api-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/pluto.css" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\spring-webmvc-portlet-2.5.1.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" afterPath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/META-INF/NOTICE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/apache-portals.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/META-INF/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/banner.png" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-util-1.1.4.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerInterceptor.java" afterPath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerInterceptor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/help.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld/portlet-el_2_0.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-taglib-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/maven/org.apache.pluto/pluto-portal/pom.properties" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\castor-1.1.1.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/portlet-spec-2.0.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/themes/navigation.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/pluto-portal-driver-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld/portlet.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/stax-api-1.0-2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/edit.png" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\portlet-api-1.0.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/maven/org.apache.pluto/pluto-portal" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/about/help.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-descriptor-impl-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld/pluto.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/ToolTips.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/pluto.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/castor.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/spring-webmvc-portlet-2.5.4.jar" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\web-app\plugins" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/commons-logging-api-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/pluto-portal-driver-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/castor-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/portlet-api-2.0.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.ipr" afterPath="$PROJECT_DIR$/Portlets Plugin.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/user-info-attributes.properties.template" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/spring-context-2.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/ccpp-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/META-INF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/commons-digester-1.8.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/spring-beans-2.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/jstl-1.1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/view.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/powered-by.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PortletsGrailsPlugin.groovy" afterPath="$PROJECT_DIR$/PortletsGrailsPlugin.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld/portlet_2_0.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/portlet-spec-1.0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/portlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/maven" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/logo3232.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/view.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/help.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/pluto-portal-1.1.4/WEB-INF/pluto-portal-driver-config.xml" afterPath="$PROJECT_DIR$/lib/pluto-portal-1.1.4/WEB-INF/pluto-portal-driver-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-descriptor-impl-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/server.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-container-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-util-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/pluto-portal-driver-services-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/maven/org.apache.pluto/pluto-portal/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-ant-tasks-1.1.4.jar" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-taglib-1.1.4.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-descriptor-api-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-descriptor-api-1.1.4.jar" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/commons-beanutils-1.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-taglib-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/themes/pluto-default-theme.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/pluto.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/AdminPortlet.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/about.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/edit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/jaxb-api-2.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/about" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/spring-core-2.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-descriptor-api-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/pluto-portal-driver-config.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/jaxb-impl-2.1.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/themes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/page/TomcatDeploymentHelp.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/commons-io-1.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/logo1616.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-util-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/page/help.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/user-info-attributes.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.iws" afterPath="$PROJECT_DIR$/Portlets Plugin.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/spring-web-2.0.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/pluto-portal-driver-impl-2.0.0-SNAPSHOT.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-container-1.1.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/page" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/themes/portlet-skin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/max.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/runtime/pluto-ant-tasks-2.0.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/lib/standard-1.0.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/min.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/test_session.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/classes/logging.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/admin/page/view.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/tld/portlet-el.tld" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/images/controls/norm.png" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-descriptor-impl-1.1.4.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portlets.iml" afterPath="$PROJECT_DIR$/portlets.iml" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-ant-tasks-1.1.4.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Events.groovy" afterPath="$PROJECT_DIR$/scripts/Events.groovy" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF/fragments/about/edit.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/META-INF/maven/org.apache.pluto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsDispatcherPortlet.java" afterPath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsDispatcherPortlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/pluto-portal-2.0.0-SNAPSHOT/WEB-INF" />
+      <change type="DELETED" beforePath="D:\work\grails-plugins\grails-portlets\lib\pluto-container-1.1.4.jar" afterPath="" />
+    </list>
     <ignored path="Portlets Plugin.iws" />
     <ignored path=".idea/workspace.xml" />
   </component>
@@ -33,6 +162,47 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints>
+      <breakpoint url="jar://C:/Program Files/Java/jdk1.5.0_07/src.zip!/java/util/ResourceBundle.java" line="835" class="java.util.ResourceBundle" package="java.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="jar://C:/Program Files/Java/jdk1.5.0_07/src.zip!/java/util/ResourceBundle.java" line="1050" class="java.util.ResourceBundle" package="java.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/servlet/view/GrailsViewResolver.java" line="147" class="org.codehaus.groovy.grails.web.servlet.view.GrailsViewResolver" package="org.codehaus.groovy.grails.web.servlet.view">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -80,10 +250,15 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
+  </component>
+  <component name="DynamicManagerImpl">
+    <option name="containingClasses">
+      <map />
+    </option>
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -94,64 +269,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Events.groovy" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
+      <file leaf-file-name="GrailsDispatcherPortlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsDispatcherPortlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="39" selection-start="990" selection-end="990" vertical-scroll-proportion="0.23509933">
+            <state line="9" column="71" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewRendererServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/ViewRendererServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="62" selection-start="3780" selection-end="3780" vertical-scroll-proportion="1.9588236">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortletRequestImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/work/pluto-1.1.4/pluto-container/src/main/java/org/apache/pluto/internal/impl/PortletRequestImpl.java">
+      <file leaf-file-name="DispatcherPortlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/portlet/DispatcherPortlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="0" selection-start="8314" selection-end="8314" vertical-scroll-proportion="0.18377483">
+            <state line="1108" column="41" selection-start="45513" selection-end="45513" vertical-scroll-proportion="0.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortletRequestAttributes.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-portlet-2.5.1.jar!/org/springframework/web/portlet/context/PortletRequestAttributes.class">
+      <file leaf-file-name="GrailsViewResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/servlet/view/GrailsViewResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.7466887">
+            <state line="132" column="27" selection-start="5362" selection-end="5362" vertical-scroll-proportion="0.9354839">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToolTips.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/work/pluto-1.1.4/pluto-portal-driver/src/main/java/org/apache/pluto/driver/tags/ToolTips.java">
+      <file leaf-file-name="InternalResourceViewResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/InternalResourceViewResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.12748344">
+            <state line="117" column="68" selection-start="4348" selection-end="4348" vertical-scroll-proportion="1.3588235">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortletModeAnchorTag.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://D:/work/pluto-1.1.4/pluto-portal-driver/src/main/java/org/apache/pluto/driver/tags/PortletModeAnchorTag.java">
+      <file leaf-file-name="AbstractCachingViewResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/AbstractCachingViewResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="4288" selection-end="4288" vertical-scroll-proportion="0.119205296">
+            <state line="69" column="0" selection-start="2315" selection-end="2315" vertical-scroll-proportion="0.58235294">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebAppContext.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$GRAILS_HOME$/lib/jetty-6.1.4.jar!/org/mortbay/jetty/webapp/WebAppContext.class">
+      <file leaf-file-name="GrailsPortletHandlerAdapter.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.12224109">
+            <state line="48" column="61" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.516129">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceBundle.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.5.0_07/src.zip!/java/util/ResourceBundle.java">
+      <file leaf-file-name="ViewResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/ViewResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="704" column="0" selection-start="30027" selection-end="30027" vertical-scroll-proportion="0.09271523">
+            <state line="52" column="9" selection-start="2134" selection-end="2134" vertical-scroll-proportion="2.5588236">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UrlBasedViewResolver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/UrlBasedViewResolver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="436" column="23" selection-start="16043" selection-end="16043" vertical-scroll-proportion="2.2588236">
               <folding />
             </state>
           </provider>
@@ -244,29 +439,15 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Pluto" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Pluto" />
+          <option name="myItemId" value="Grails User Library" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\lib\spring-webmvc-portlet-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\lib\spring-webmvc-portlet-2.5.4.jar!\org\springframework\web\portlet" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -284,15 +465,11 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Pluto" />
+          <option name="myItemId" value="Grails User Library" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar!\org\apache\pluto\driver" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\lib\spring-webmvc-portlet-2.5.4.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -310,37 +487,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Pluto" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar!\org\apache\pluto\driver" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib\pluto-portal-1.1.4\WEB-INF\lib\pluto-portal-driver-1.1.4.jar!\org\apache\pluto\driver\tags" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
+          <option name="myItemId" value="Grails User Library" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -358,309 +505,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay\jetty" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay\jetty" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay\jetty\webapp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay\jetty" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar!\org\mortbay\jetty\servlet" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jetty-6.1.4.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar!\org\apache\jasper" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar!\org\apache\jasper" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar!\org\apache\jasper\runtime" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-runtime-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar!\org\apache\jasper" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar!\org\apache\jasper" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar!\org\apache\jasper\servlet" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Grails Lib" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\grails\lib\jasper-compiler-5.5.15.jar" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Libraries" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="GRAILS" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -678,11 +523,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="GRAILS" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web\servlet" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -700,19 +553,23 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="GRAILS" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar!\java" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar!\java\util" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web\servlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web\servlet\view" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -730,29 +587,23 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="&lt; 1.5 &gt;" />
+          <option name="myItemId" value="GRAILS" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\Program Files\Java\jdk1.5.0_07\jre\lib\rt.jar!\java" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web\servlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web\servlet\support" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -766,37 +617,19 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\test" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\src\java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\src\java\org\codehaus\grails\portlets" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar!\org\springframework\web" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -810,29 +643,15 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\scripts" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-webmvc.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -846,11 +665,561 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets" />
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:D:\work\portlets\grails-plugins\portlets\lib" />
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web\util" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web\context" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web\context" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework\web\context\support" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org\springframework" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar!\org" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\spring-2.5.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay\jetty" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay\jetty" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar!\org\mortbay\jetty\servlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\lib\jetty-6.1.4.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web\servlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web\servlet" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar!\org\codehaus\groovy\grails\web\servlet\view" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Libraries" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.LibraryGroupNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="GRAILS" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-1.1-SNAPSHOT\dist\grails-web-1.1-SNAPSHOT.jar" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\src\java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\src\java\org\codehaus\grails\portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:D:\work\grails-plugins\grails-portlets\scripts" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -860,7 +1229,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="0.16666667" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="0.5" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -874,6 +1243,7 @@
     </navigator>
   </component>
   <component name="PropertiesComponent">
+    <property name="TEMP_MODULE_EXPLODED_DIR_FOR_portlets/web/Web2" value="C:\Documents and Settings\Lee\Local Settings\Temp\webExplodedDir3918tmp" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
@@ -926,47 +1296,6 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -979,6 +1308,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
@@ -1009,21 +1345,58 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails Application">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="grailsparams" value="" />
+      <setting name="operation" value="run-app" />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfigurationType" factoryName="Groovy Script">
       <module name="" />
       <setting name="path" value="" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
       <setting name="workDir" value="D:\work\portlets\grails-plugins\portlets\." />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails Application">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="operation" value="run-app" />
+      <setting name="debug" value="false" />
     </configuration>
     <configuration default="false" name="Portlets Plugin" type="GrailsRunConfigurationType" factoryName="Grails Application">
       <module name="portlets" />
       <setting name="vmparams" value="" />
+      <setting name="grailsparams" value="" />
       <setting name="operation" value="run-app" />
       <method>
         <option name="Make" value="true" />
@@ -1046,9 +1419,9 @@
       </method>
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Grails Application.Portlets Plugin" />
-      <item index="1" class="java.lang.String" itemvalue="Remote.Local Debug" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ItTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ItTest" />
+      <item index="1" class="java.lang.String" itemvalue="Grails Application.Portlets Plugin" />
+      <item index="2" class="java.lang.String" itemvalue="Remote.Local Debug" />
     </list>
   </component>
   <component name="StarteamConfiguration">
@@ -1074,6 +1447,7 @@
     <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="UPDATE_RECURSIVELY" value="true" />
     <option name="MERGE_DRY_RUN" value="false" />
+    <configuration useDefault="true">C:\Documents and Settings\Lee\Application Data\Subversion</configuration>
     <upgradeMode>auto</upgradeMode>
   </component>
   <component name="TodoView" selected-index="0">
@@ -1101,11 +1475,11 @@
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.64521194" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" order="1" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3120915" order="1" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5714286" order="3" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40502355" order="1" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3343799" order="3" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="13" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
@@ -1113,15 +1487,15 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
-      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="4" />
+      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" order="4" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="5" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29278183" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26439577" order="0" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36820763" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
       <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="12" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" order="2" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
@@ -1136,7 +1510,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1191,114 +1565,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/JstlView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PortletsGrailsPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="34" selection-start="1065" selection-end="1065" vertical-scroll-proportion="-1.0479453">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/spring-2.5.1.jar!/org/springframework/web/context/WebApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="173" selection-end="173" vertical-scroll-proportion="0.11643836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/spring-2.5.1.jar!/org/springframework/web/context/support/XmlWebApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="177" selection-end="177" vertical-scroll-proportion="0.11950791">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="47" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2056239">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/jasper-compiler-5.5.15.jar!/org/apache/jasper/servlet/JspServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1001" selection-end="1001" vertical-scroll-proportion="1.0536913">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/jetty-6.1.4.jar!/org/mortbay/jetty/servlet/ServletHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2821" selection-end="2821" vertical-scroll-proportion="0.5771812">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/jasper-compiler-5.5.15.jar!/org/apache/jasper/servlet/JspServletWrapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="2828" selection-end="2828" vertical-scroll-proportion="0.557047">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/jasper-runtime-5.5.15.jar!/org/apache/jasper/runtime/JspWriterImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3183" selection-end="3183" vertical-scroll-proportion="0.5088757">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.5.0_07/src.zip!/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="704" column="0" selection-start="30027" selection-end="30027" vertical-scroll-proportion="0.09271523">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/work/pluto-1.1.4/pluto-portal-driver/src/main/java/org/apache/pluto/driver/tags/PortletModeAnchorTag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="4288" selection-end="4288" vertical-scroll-proportion="0.119205296">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/jetty-6.1.4.jar!/org/mortbay/jetty/webapp/WebAppContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.12224109">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/spring-webmvc-portlet-2.5.1.jar!/org/springframework/web/portlet/context/PortletRequestAttributes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.7466887">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/work/pluto-1.1.4/pluto-portal-driver/src/main/java/org/apache/pluto/driver/tags/ToolTips.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1270" selection-end="1270" vertical-scroll-proportion="0.12748344">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/work/pluto-1.1.4/pluto-container/src/main/java/org/apache/pluto/internal/impl/PortletRequestImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="0" selection-start="8314" selection-end="8314" vertical-scroll-proportion="0.18377483">
+        <state line="127" column="26" selection-start="4968" selection-end="4968" vertical-scroll-proportion="1.3846154">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="39" selection-start="990" selection-end="990" vertical-scroll-proportion="0.23509933">
+        <state line="37" column="63" selection-start="1419" selection-end="1419" vertical-scroll-proportion="0.60714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work/jetty-6.1.4/modules/jetty/src/main/java/org/mortbay/jetty/servlet/AbstractSessionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="0" selection-start="5525" selection-end="5562" vertical-scroll-proportion="0.39084506">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/PortletReloadFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="711" selection-end="711" vertical-scroll-proportion="0.6822742">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/AbstractView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="0" selection-start="8886" selection-end="8886" vertical-scroll-proportion="0.31438127">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/ViewRendererServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="62" selection-start="3780" selection-end="3780" vertical-scroll-proportion="1.9588236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/work/grails-1.1-SNAPSHOT/dist/grails-web-1.1-SNAPSHOT.jar!/org/codehaus/groovy/grails/web/servlet/view/GrailsViewResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="181" selection-end="181" vertical-scroll-proportion="0.23943663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/AbstractCachingViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2315" selection-end="2315" vertical-scroll-proportion="0.58235294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/ViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="9" selection-start="2134" selection-end="2134" vertical-scroll-proportion="2.5588236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/portlet/DispatcherPortlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1108" column="41" selection-start="45513" selection-end="45513" vertical-scroll-proportion="0.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/InternalResourceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="0" selection-start="7948" selection-end="7948" vertical-scroll-proportion="0.6722408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/UrlBasedViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="436" column="23" selection-start="16043" selection-end="16043" vertical-scroll-proportion="2.2588236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/spring-2.5.4/src/org/springframework/web/servlet/view/InternalResourceViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="68" selection-start="4348" selection-end="4348" vertical-scroll-proportion="1.3588235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/servlet/view/GrailsViewResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="27" selection-start="5362" selection-end="5362" vertical-scroll-proportion="0.9354839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsDispatcherPortlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="71" selection-start="216" selection-end="216" vertical-scroll-proportion="0.1">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="61" selection-start="2182" selection-end="2182" vertical-scroll-proportion="0.516129">
           <folding />
         </state>
       </provider>

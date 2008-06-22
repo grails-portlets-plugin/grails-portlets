@@ -7,8 +7,6 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.portlet.handler.HandlerInterceptorAdapter;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.Log;
 
 import javax.portlet.*;
 import javax.servlet.ServletContext;
@@ -26,7 +24,7 @@ import javax.servlet.http.HttpSession;
 public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter implements
         ServletContextAware {
     private ServletContext servletContext;
-    private PortletReloadFilter portletReloadFilter = new PortletReloadFilter();
+    private PortletReloadFilter portletReloadFilter;
 
     public boolean preHandleAction(ActionRequest actionRequest, ActionResponse actionResponse, Object o)
             throws Exception {
@@ -37,10 +35,6 @@ public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter i
     private void beforeHandle(PortletRequest portletRequest, PortletResponse portletResponse) {
         LocaleContextHolder.setLocale(portletRequest.getLocale());
         convertRequestToGrailsWebRequest(portletRequest, portletResponse);
-        Log log = LogFactory.getLog(this.getClass());
-        PortletSession session = portletRequest.getPortletSession();
-        log.info("PSession = " + session.getId());
-        log.info("HSession = " + ((GrailsWebRequest) RequestContextHolder.currentRequestAttributes()).getCurrentRequest().getSession().getId());
         //TODO I think this could move to GrailsDispatcherServlet
         if (GrailsUtil.isDevelopmentEnv()) {
             runReloadFilter(portletRequest, portletResponse);
@@ -52,7 +46,7 @@ public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter i
         HttpServletRequest request = (HttpServletRequest) portletRequest;
         //Make sure we have an underlying http session and that it won't time out - PLUTO BUG
         HttpSession session = request.getSession(true);
-        session.setMaxInactiveInterval(0);
+        session.setMaxInactiveInterval(-1);
         GrailsWebRequest webRequest = new GrailsWebRequest(request,
                 (HttpServletResponse) portletResponse, servletContext);
         RequestContextHolder.setRequestAttributes(webRequest);
@@ -87,5 +81,13 @@ public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter i
 
     public void setServletContext(ServletContext servletContext) {
         this.servletContext = servletContext;
+    }
+
+    public void setPortletReloadFilter(PortletReloadFilter portletReloadFilter) {
+        this.portletReloadFilter = portletReloadFilter;
+    }
+
+    public PortletReloadFilter getPortletReloadFilter() {
+        return portletReloadFilter;
     }
 }
