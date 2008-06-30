@@ -1,6 +1,7 @@
 import org.springframework.web.context.request.RequestContextHolder as RCH
 
 import grails.util.GrailsUtil
+import javax.portlet.PortletRequest
 import org.codehaus.grails.portlets.*
 import org.codehaus.groovy.grails.commons.GrailsClass
 import org.codehaus.groovy.grails.plugins.PluginMetaManager
@@ -19,7 +20,7 @@ class PortletsGrailsPlugin {
 
     def watchedResources = ['file:./grails-app/controllers/**/*Portlet.groovy',
             'file:./plugins/*/grails-app/controllers/**/*Portlet.groovy'
-            ]
+    ]
 
     def version = 0.1
     def dependsOn = [controllers: '1.1-SNAPSHOT']
@@ -54,53 +55,59 @@ class PortletsGrailsPlugin {
         }
         portletHandlerAdapter(GrailsPortletHandlerAdapter)
         portletReloadFilter(PortletReloadFilter)
-        portletHandlerInterceptor(GrailsPortletHandlerInterceptor){
+        portletHandlerInterceptor(GrailsPortletHandlerInterceptor) {
             portletReloadFilter = ref(portletReloadFilter)
         }
     }
 
     def doWithWebDescriptor = {webXml ->
         def mappingElement = webXml.'servlet-mapping'
-        mappingElement = mappingElement[mappingElement.size()-1]
+        mappingElement = mappingElement[mappingElement.size() - 1]
 
         mappingElement + {
-            'servlet-mapping' {
-                'servlet-name'('view-servlet')
-                'url-pattern'('/WEB-INF/servlet/view')
-            }
+            'servlet-mapping'
+                    {
+                        'servlet-name'('view-servlet')
+                        'url-pattern'('/WEB-INF/servlet/view')
+                    }
         }
 
         def servletElement = webXml.'servlet'
-        servletElement = servletElement[servletElement.size()-1]
+        servletElement = servletElement[servletElement.size() - 1]
 
         servletElement + {
-            'servlet' {
-                'servlet-name'('view-servlet')
-                'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
-                'load-on-startup'('1')
-            }
+            'servlet'
+                    {
+                        'servlet-name'('view-servlet')
+                        'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
+                        'load-on-startup'('1')
+                    }
         }
 
         if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
+            // TODO refactor pluto specific code out to pluggable embedded portal interface
             log.info("Creating Pluto servlets for ${watchedResources.length} portlets...")
             for (Resource portlet in watchedResources) {
                 def portletName = portlet.filename - 'Portlet.groovy'
                 servletElement + {
-                    'servlet' {
-                        'servlet-name'(portletName)
-                        'servlet-class'('org.apache.pluto.core.PortletServlet')
-                        'init-param' {
-                            'param-name'('portlet-name')
-                            'param-value'(portletName)
-                        }
-                        'load-on-startup'('1')
-                    }
+                    'servlet'
+                            {
+                                'servlet-name'(portletName)
+                                'servlet-class'('org.apache.pluto.core.PortletServlet')
+                                'init-param'
+                                        {
+                                            'param-name'('portlet-name')
+                                            'param-value'(portletName)
+                                        }
+                                'load-on-startup'('1')
+                            }
                 }
                 mappingElement + {
-                    'servlet-mapping' {
-                        'servlet-name'(portletName)
-                        'url-pattern'("/PlutoInvoker/${portletName}")
-                    }
+                    'servlet-mapping'
+                            {
+                                'servlet-name'(portletName)
+                                'url-pattern'("/PlutoInvoker/${portletName}")
+                            }
                 }
             }
         }
@@ -151,9 +158,13 @@ class PortletsGrailsPlugin {
                 webRequest.getCurrentRequest().getPortalContext()
             }
 
-            mc.getPreferences = { ->
+            mc.getPreferences = {->
                 def webRequest = RCH.currentRequestAttributes();
                 webRequest.getCurrentRequest().getPreferences()
+            }
+            mc.getUserInfo = {->
+                def webRequest = RCH.currentRequestAttributes();
+                webRequest.getCurrentRequest().getAttribute(PortletRequest.USER_INFO)
             }
 
             // deal with abstract super classes
@@ -177,7 +188,6 @@ class PortletsGrailsPlugin {
         def portletClass = application.addArtefact(PortletArtefactHandler.TYPE, event.source)
 
         if (isNew) {
-            //TODO dynamic adding of portlets to pluto when in DEV
             log.info "Portlet ${event.source} found. You need to restart for the change to be applied"
         }
         else {
