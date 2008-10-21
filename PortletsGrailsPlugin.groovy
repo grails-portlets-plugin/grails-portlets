@@ -23,7 +23,7 @@ class PortletsGrailsPlugin {
     ]
 
     def version = 0.1
-    def dependsOn = [controllers: '1.1-SNAPSHOT']
+    def loadAfter = ['controllers']
     def artefacts = [PortletArtefactHandler.class]
 
     def doWithSpring = {
@@ -66,10 +66,10 @@ class PortletsGrailsPlugin {
 
         mappingElement + {
             'servlet-mapping'
-                    {
-                        'servlet-name'('view-servlet')
-                        'url-pattern'('/WEB-INF/servlet/view')
-                    }
+            {
+                'servlet-name'('view-servlet')
+                'url-pattern'('/WEB-INF/servlet/view')
+            }
         }
 
         def servletElement = webXml.'servlet'
@@ -77,11 +77,11 @@ class PortletsGrailsPlugin {
 
         servletElement + {
             'servlet'
-                    {
-                        'servlet-name'('view-servlet')
-                        'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
-                        'load-on-startup'('1')
-                    }
+            {
+                'servlet-name'('view-servlet')
+                'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
+                'load-on-startup'('1')
+            }
         }
 
         if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
@@ -91,23 +91,23 @@ class PortletsGrailsPlugin {
                 def portletName = portlet.filename - 'Portlet.groovy'
                 servletElement + {
                     'servlet'
-                            {
-                                'servlet-name'(portletName)
-                                'servlet-class'('org.apache.pluto.core.PortletServlet')
-                                'init-param'
-                                        {
-                                            'param-name'('portlet-name')
-                                            'param-value'(portletName)
-                                        }
-                                'load-on-startup'('1')
-                            }
+                    {
+                        'servlet-name'(portletName)
+                        'servlet-class'('org.apache.pluto.core.PortletServlet')
+                        'init-param'
+                        {
+                            'param-name'('portlet-name')
+                            'param-value'(portletName)
+                        }
+                        'load-on-startup'('1')
+                    }
                 }
                 mappingElement + {
                     'servlet-mapping'
-                            {
-                                'servlet-name'(portletName)
-                                'url-pattern'("/PlutoInvoker/${portletName}")
-                            }
+                    {
+                        'servlet-name'(portletName)
+                        'url-pattern'("/PlutoInvoker/${portletName}")
+                    }
                 }
             }
         }

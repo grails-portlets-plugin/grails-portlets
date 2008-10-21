@@ -102,12 +102,13 @@
       <sourceFolder url="file://$MODULE_DIR$/test/integration" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/test/unit" isTestSource="true" />
     </content>
+    <orderEntry type="library" name="grails-1.1-SNAPSHOT" level="application" />
+    <orderEntry type="library" name="GROOVY" level="application" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Portlet API" level="project" />
     <orderEntry type="library" name="Pluto2" level="project" />
     <orderEntry type="library" name="Pluto" level="project" />
-    <orderEntry type="library" name="GROOVY" level="application" />
     <orderEntry type="module-library">
       <library name="Grails User Library">
         <CLASSES>
@@ -118,7 +119,6 @@
         <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="GRAILS" level="application" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -129,6 +129,9 @@
       </library>
     </orderEntry>
     <orderEntryProperties />
+  </component>
+  <component name="RSpecModuleSettingsStorage">
+    <RSPEC_MODULE_SETTINGS_STORAGE_ID NAME="RSPEC_SUPPORT_TYPE" VALUE="NONE" />
   </component>
 </module>
 

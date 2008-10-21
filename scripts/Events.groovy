@@ -1,4 +1,3 @@
-import com.bekk.boss.pluto.embedded.jetty.util.PlutoJettySessionManager
 import grails.util.GrailsUtil
 import groovy.xml.StreamingMarkupBuilder
 import org.mortbay.jetty.Server
@@ -10,10 +9,12 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver
 
 def version = 0.1
 def basedir = System.getProperty("base.dir")
-def portletXml = new File("${basedir}/web-app/web-inf/portlet.xml")
-def pluginLibDir = "${basedir}/plugins/portlets-${version}/lib"
-if (!new File(pluginLibDir).exists()) {
+def portletXml = new File("${basedir}/web-app/WEB-INF/portlet.xml")
+def pluginDir = "${pluginsHome}/portlets-${version}"
+def pluginLibDir = "${pluginDir}/lib"
+if (!new File(pluginDir).exists()) {
     //we must not be installed...
+    pluginDir = basedir
     pluginLibDir = "${basedir}/lib"
     if (!new File(pluginLibDir).exists()) {
         throw new RuntimeException('Unable to find Portlets plugin lib folder')
@@ -28,20 +29,28 @@ def portletVersion = '1.0'
 def plutoVersion = '1.1.4'
 
 eventConfigureJetty = {Server server ->
-    SessionHandler sh = new SessionHandler();
-    //kindly borrowed from the Maven pluto plugin author Nils-Helge Garli
-    sh.setSessionManager(new PlutoJettySessionManager());
-    server.getHandler().setSessionHandler(sh);
+    try {
+        SessionHandler sh = new SessionHandler();
+        //kindly borrowed from the Maven pluto plugin author Nils-Helge Garli
+        def sessionMan = classLoader.loadClass('com.bekk.boss.pluto.embedded.jetty.util.PlutoJettySessionManager')
+        sh.setSessionManager(sessionMan.newInstance());
+        server.getHandler().setSessionHandler(sh);
+    } catch (NoClassDefFoundError e) {
+        // This script is compiled before the plugin source in some cases so we need to ignore compile errors as the classs wil be there at runtime when it's needed
+    }
 
     // TODO refactor pluto specific code out to pluggable embedded portal interface
     def webContext = new WebAppContext("${pluginLibDir}/pluto-portal-${plutoVersion}", "pluto")
     webContext.systemClasses = ["-org.apache.pluto.driver.", "org.apache.pluto.", "javax.portlet.", "javax.servlet.", "org.springframework."]
     webContext.contextPath = "/pluto"
-
-    sh = new SessionHandler();
-    sh.setSessionManager(new PlutoJettySessionManager());
-    webContext.setSessionHandler(sh);
-
+    try {
+        sh = new SessionHandler();
+        def sessionMan = classLoader.loadClass('com.bekk.boss.pluto.embedded.jetty.util.PlutoJettySessionManager')
+        sh.setSessionManager(sessionMan.newInstance());
+        webContext.setSessionHandler(sh);
+    } catch (NoClassDefFoundError e) {
+        // This script is compiled before the plugin source in some cases so we need to ignore compile errors as the classs wil be there at runtime when it's needed
+    }
     server.addHandler(webContext)
 
     HashUserRealm myrealm = new HashUserRealm("default", "${pluginLibDir}/realm.properties");
@@ -80,7 +89,7 @@ eventSetClasspath = {rootLoader ->
 
 eventPackagingEnd = {
     //TODO refactor out to portletXmlWriter and unit test
-    def plutoConfigXml = new File("${pluginLibDir}/pluto-portal-${plutoVersion}/web-inf/pluto-portal-driver-config.xml")
+    def plutoConfigXml = new File("${pluginLibDir}/pluto-portal-${plutoVersion}/WEB-INF/pluto-portal-driver-config.xml")
     try {
         def xmlWriter = new StreamingMarkupBuilder();
         def searchPath = "file:${basedir}/grails-app/controllers/**/*Portlet.groovy"

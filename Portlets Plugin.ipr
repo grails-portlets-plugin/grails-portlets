@@ -198,6 +198,10 @@
     <option name="IS_EMACS_ERRORS_MODE" value="true" />
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
   </component>
+  <component name="LiquibaseProjectComponent">
+    <option name="outputChangeLogFile" />
+    <option name="rootChangeLogFile" />
+  </component>
   <component name="ModuleStructureConfigurable.UI">
     <option name="proportions">
       <SplitterProportionsDataImpl />
@@ -328,7 +332,10 @@
     <option name="USE_CLIENT_FILTER" value="true" />
     <option name="CLIENT" value="" />
   </component>
-  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectFileVersion" converted="true">
+    <converter id="javaee-modules" />
+    <converter id="ror-modules" />
+  </component>
   <component name="ProjectLibrariesConfigurable.UI">
     <option name="proportions">
       <SplitterProportionsDataImpl />
@@ -360,6 +367,9 @@
     <option name="proportions">
       <SplitterProportionsDataImpl />
     </option>
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myVersion" value="123" />
   </component>
   <component name="SvnChangesBrowserSettings">
     <option name="USE_AUTHOR_FIELD" value="true" />
@@ -489,8 +499,5 @@
       </SOURCES>
     </library>
   </component>
-  <UsedPathMacros>
-    <macro name="GRAILS_HOME" />
-  </UsedPathMacros>
 </project>
 
