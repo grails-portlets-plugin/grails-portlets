@@ -15,10 +15,18 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="">
+    <list default="true" readonly="true" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.iws" afterPath="$PROJECT_DIR$/Portlets Plugin.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portlets.iml" afterPath="$PROJECT_DIR$/portlets.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Install.groovy" afterPath="$PROJECT_DIR$/scripts/_Install.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Upgrade.groovy" afterPath="$PROJECT_DIR$/scripts/_Upgrade.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Events.groovy" afterPath="$PROJECT_DIR$/scripts/Events.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" afterPath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.ipr" afterPath="$PROJECT_DIR$/Portlets Plugin.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
     </list>
     <ignored path="Portlets Plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +47,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$GRAILS_HOME$/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java" line="111" class="org.codehaus.groovy.grails.commons.spring.GrailsWebApplicationContext" package="org.codehaus.groovy.grails.commons.spring">
+      <breakpoint url="file://$GRAILS_HOME$/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java" line="111" class="Class at GrailsWebApplicationContext.java:111" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -52,7 +60,20 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" line="25" class="org.codehaus.grails.portlets.GrailsPortletHandlerAdapter" package="org.codehaus.grails.portlets">
+      <breakpoint url="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy" line="55" class="Class at TagLibraryResolver.groovy:55" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy" line="97" class="Class at TagLibraryResolver.groovy:97" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -113,8 +134,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -132,73 +153,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Events.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="40" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.42521632">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrailsPortletHandlerAdapter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GrailsPortletHandlerAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.12978986">
+            <state line="80" column="63" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.25671142">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrailsPortletApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletApplicationContext.java">
+      <file leaf-file-name="_Install.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/_Install.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="63" selection-start="370" selection-end="370" vertical-scroll-proportion="0.12742719">
+            <state line="3" column="6" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrailsWebApplicationContext.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$GRAILS_HOME$/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java">
+      <file leaf-file-name="_Upgrade.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/_Upgrade.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="13" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.13834952">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebApplicationContextUtils.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$GRAILS_HOME$/lib/spring-2.5.5.jar!/org/springframework/web/context/support/WebApplicationContextUtils.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="893" selection-end="893" vertical-scroll-proportion="0.25957972">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.03640777">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.13043478">
+            <state line="11" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -207,20 +183,43 @@
       <file leaf-file-name="PortletsGrailsPlugin.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PortletsGrailsPlugin.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="72" selection-start="791" selection-end="8270" vertical-scroll-proportion="0.091019414">
-              <folding>
-                <marker date="1224568799000" expanded="true" signature="3303:3537" placeholder="{...}" />
-                <marker date="1224568799000" expanded="true" signature="3339:3527" placeholder="{...}" />
-                <marker date="1224568799000" expanded="true" signature="4205:4344" placeholder="{...}" />
-              </folding>
+            <state line="16" column="6" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-1.5.0-sun/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <file leaf-file-name="Events.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.27812114">
+            <state line="60" column="21" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/Parse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="531" column="43" selection-start="19724" selection-end="19724" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TagLibraryResolver.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="0" selection-start="3869" selection-end="3869" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GrailsApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://D:/work/grails-1.1/src/commons/org/codehaus/groovy/grails/commons/GrailsApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="367" column="12" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -284,120 +283,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectPane">
-    <subPane>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src/java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src/java/org/codehaus/grails/portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src/java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src/java/com/bekk/boss/pluto/embedded/jetty/util" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Portlets Plugin" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/home/lee/work/grails-portlets/scripts" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </subPane>
+    <subPane />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -419,15 +305,18 @@
   <component name="PropertiesComponent">
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_portlets/web/Web2" value="C:\Documents and Settings\Lee\Local Settings\Temp\webExplodedDir3918tmp" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="C:\Documents and Settings\Lee\.grails\1.0-RC2-SNAPSHOT\projects\portlet-test" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="TEMP_MODULE_EXPLODED_DIR_FOR_portlets/web/Web" value="C:\Documents and Settings\Lee\Local Settings\Temp\webExplodedDir54763tmp" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="IntroduceConstantDialog.RECENTS_KEY">
@@ -450,7 +339,7 @@
     <RUBY_DOC NAME="NUMBER" VALUE="0" />
   </component>
   <component name="RunManager" selected="Remote.Local Debug">
-    <tempConfiguration default="false" name="ItTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <tempConfiguration default="false" name="ItTest" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="portlets" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -474,15 +363,14 @@
         <option name="Make" value="true" />
       </method>
     </tempConfiguration>
-    <configuration default="true" type="GroovyScriptRunConfigurationType" factoryName="Groovy Script">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="D:\work\portlets\grails-plugins\portlets\." />
-      <setting name="debug" value="false" />
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+    <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false" runner="emma">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -511,14 +399,19 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false" runner="emma">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -535,21 +428,13 @@
       <module name="" />
       <setting name="vmparams" value="" />
       <setting name="grailsparams" value="" />
-      <setting name="operation" value="run-app" />
+      <setting name="hostik" value="" />
+      <setting name="port" value="" />
+      <setting name="jndi" value="false" />
+      <setting name="recomp" value="false" />
+      <setting name="recompileFreq" value="" />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
+    <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false" runner="emma">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -575,7 +460,11 @@
       <module name="portlets" />
       <setting name="vmparams" value="" />
       <setting name="grailsparams" value="" />
-      <setting name="operation" value="run-app" />
+      <setting name="hostik" value="" />
+      <setting name="port" value="" />
+      <setting name="jndi" value="false" />
+      <setting name="recomp" value="false" />
+      <setting name="recompileFreq" value="" />
       <method>
         <option name="Make" value="true" />
       </method>
@@ -601,7 +490,16 @@
       <item index="1" class="java.lang.String" itemvalue="Grails Application.Portlets Plugin" />
       <item index="2" class="java.lang.String" itemvalue="Remote.Local Debug" />
     </list>
+    <configuration default="true" type="GroovyScriptRunConfigurationType" factoryName="Groovy Script">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="D:\work\portlets\grails-plugins\portlets\." />
+      <setting name="debug" value="false" />
+    </configuration>
   </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="StarteamConfiguration">
     <option name="SERVER" value="" />
     <option name="PORT" value="49201" />
@@ -623,10 +521,10 @@
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
     <option name="UPDATE_RUN_STATUS" value="false" />
-    <option name="UPDATE_RECURSIVELY" value="true" />
     <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <configuration useDefault="true">/home/lee/.subversion</configuration>
+    <configuration useDefault="true">C:\Documents and Settings\Lee\Application Data\Subversion</configuration>
     <upgradeMode>auto</upgradeMode>
     <myIsUseDefaultProxy>true</myIsUseDefaultProxy>
   </component>
@@ -651,38 +549,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1680" height="1000" extended-state="0" />
+    <frame x="-4" y="-4" width="1288" height="780" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64521194" order="8" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" order="1" />
-      <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963648" order="-1" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="13" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="9" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" order="4" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25015405" order="0" />
-      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" order="-1" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" order="2" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36820763" order="2" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="6" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40502355" order="1" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32611173" order="3" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" order="10" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" order="1" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="5" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="11" />
-      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="12" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="-1" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="4" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.64521194" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52747256" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50549453" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="10" side_tool="false" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24979724" sideWeight="0.5" order="1" side_tool="false" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26941746" sideWeight="0.49921507" order="0" side_tool="false" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" />
+      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963648" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" sideWeight="0.5" order="4" side_tool="false" />
+      <window_info id="Grails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36820763" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" />
+      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
+      <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -691,9 +593,10 @@
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated plugin.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes for 1.1-beta1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -710,6 +613,7 @@
     <MESSAGE value="Added more view/action resolution code" />
     <MESSAGE value="Updated to work with latest 1.1 SNAPSHOT" />
     <MESSAGE value="Updated plugin.xml" />
+    <MESSAGE value="Fixes for 1.1-beta1" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -745,6 +649,9 @@
       <option name="VERSION" />
     </GetOptions>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
   <component name="XPathView.XPathProjectComponent">
     <history />
     <find-history />
@@ -775,106 +682,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/_Upgrade.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.5.0-sun/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="22" selection-start="5833" selection-end="5833" vertical-scroll-proportion="0.33252427">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.03640777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///home/lee/work/grails-1.0.3/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="13" selection-start="1983" selection-end="1983" vertical-scroll-proportion="-0.80097085">
-          <folding>
-            <marker date="1212711912000" expanded="false" signature="0:623" placeholder="/.../" />
-            <marker date="1212711912000" expanded="false" signature="684:1747" placeholder="..." />
-            <marker date="1212711912000" expanded="true" signature="1749:1969" placeholder="/**...*/" />
-            <marker date="1212711912000" expanded="true" signature="2299:2314" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="2401:2422" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="2464:2841" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="2848:2924" placeholder="/**...*/" />
-            <marker date="1212711912000" expanded="true" signature="2987:3031" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3076:3105" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3151:3294" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3326:3350" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3396:3403" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3513:3550" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="3557:3646" placeholder="/**...*/" />
-            <marker date="1212711912000" expanded="true" signature="3731:4193" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="4196:4320" placeholder="/**...*/" />
-            <marker date="1212711912000" expanded="true" signature="4372:4440" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="4443:4572" placeholder="/**...*/" />
-            <marker date="1212711912000" expanded="true" signature="4637:4699" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="4772:4804" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="4868:4910" placeholder="{...}" />
-            <marker date="1212711912000" expanded="true" signature="4956:4998" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="63" selection-start="370" selection-end="370" vertical-scroll-proportion="0.12742719">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$GRAILS_HOME$/lib/spring-2.5.5.jar!/org/springframework/web/context/support/WebApplicationContextUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="893" selection-end="893" vertical-scroll-proportion="0.25957972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$GRAILS_HOME$/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="1872" selection-end="1872" vertical-scroll-proportion="0.13834952">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.5.0-sun/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.27812114">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.12978986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PortletsGrailsPlugin.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="72" selection-start="791" selection-end="8270" vertical-scroll-proportion="0.091019414">
-          <folding>
-            <marker date="1224568799000" expanded="true" signature="3303:3537" placeholder="{...}" />
-            <marker date="1224568799000" expanded="true" signature="3339:3527" placeholder="{...}" />
-            <marker date="1224568799000" expanded="true" signature="4205:4344" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="40" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.42521632">
+        <state line="43" column="13" selection-start="1965" selection-end="1965" vertical-scroll-proportion="0.029876977">
           <folding />
         </state>
       </provider>
@@ -886,13 +696,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="359" selection-end="359" vertical-scroll-proportion="0.13043478">
+        <state line="11" column="63" selection-start="370" selection-end="370" vertical-scroll-proportion="0.20376712">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="172" selection-end="172" vertical-scroll-proportion="0.059753954">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.21715328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PortletsGrailsPlugin.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/Parse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="531" column="43" selection-start="19724" selection-end="19724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work/grails-1.1/src/commons/org/codehaus/groovy/grails/commons/GrailsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="367" column="12" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="3869" selection-end="3869" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="21" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/_Upgrade.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/_Install.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="63" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.25671142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <option name="states">
+      <map>
+        <entry key="Errors.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="myStates">
+      <map>
+        <entry key="Errors.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+        <entry key="ScopeChooserConfigurable.UI">
+          <value>
+            <UIState>
+              <option name="proportions">
+                <SplitterProportionsDataImpl />
+              </option>
+            </UIState>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
 

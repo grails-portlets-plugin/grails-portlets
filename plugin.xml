@@ -1,9 +1,6 @@
 <plugin name='portlets' version='0.1'>
-    <author>Lee Butts</author>
-    <authorEmail>leebutts@gmail.com</authorEmail>
-    <title>JSR168 Portlet Support</title>
-    <description>Adds the ability to write controller-like Portlets in groovy and deploy the grails application to a
-        JSR168 compliant Portal.
-    </description>
-    <documentation>http://www.grails.org/Portlets+Plugin</documentation>
+    <resources>
+        <resource>UrlMappings</resource>
+    </resources>
+    <dependencies/>
 </plugin>

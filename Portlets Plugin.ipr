@@ -114,6 +114,7 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
@@ -332,10 +333,10 @@
     <option name="USE_CLIENT_FILTER" value="true" />
     <option name="CLIENT" value="" />
   </component>
-  <component name="ProjectFileVersion" converted="true">
-    <converter id="javaee-modules" />
-    <converter id="ror-modules" />
+  <component name="ProjectDetails">
+    <option name="projectName" value="Portlets Plugin" />
   </component>
+  <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectLibrariesConfigurable.UI">
     <option name="proportions">
       <SplitterProportionsDataImpl />
@@ -346,7 +347,7 @@
       <module fileurl="file://$PROJECT_DIR$/portlets.iml" filepath="$PROJECT_DIR$/portlets.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.5" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ResourceManagerContainer">
@@ -369,7 +370,7 @@
     </option>
   </component>
   <component name="SvnBranchConfigurationManager">
-    <option name="myVersion" value="123" />
+    <option name="myVersion" value="124" />
   </component>
   <component name="SvnChangesBrowserSettings">
     <option name="USE_AUTHOR_FIELD" value="true" />
@@ -392,14 +393,14 @@
   <component name="libraryTable">
     <library name="Portlet API">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/lib/runtime/portlet-api-1.0.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/portlet-api-1.0.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />
     </library>
     <library name="Spring Portlet MVC">
       <CLASSES>
-        <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-portlet-2.5.1.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/spring-webmvc-portlet-2.5.4.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES />

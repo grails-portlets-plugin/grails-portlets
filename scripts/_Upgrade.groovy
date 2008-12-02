@@ -1,4 +1,3 @@
-
 //
 // This script is executed by Grails during application upgrade ('grails upgrade' command).
 // This script is a Gant script so you can use all special variables
@@ -9,6 +8,6 @@
 // Ant.mkdir(dir:"D:\work\portlets\grails-plugins/portlets/grails-app/jobs")
 //
 
-Ant.property(environment:"env")
-grailsHome = Ant.antProject.properties."env.GRAILS_HOME"
+ant.property(environment: "env")
+grailsHome = ant.antProject.properties."env.GRAILS_HOME"
 

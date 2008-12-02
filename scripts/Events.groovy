@@ -58,7 +58,7 @@ eventConfigureJetty = {Server server ->
     println 'jetty'
 }
 
-eventSetClasspath = {rootLoader ->
+eventSetClasspath = {
     if (config?.portlet?.version == '2') {
         portletVersion = '2.0'
         plutoVersion = '2.0.0-SNAPSHOT'

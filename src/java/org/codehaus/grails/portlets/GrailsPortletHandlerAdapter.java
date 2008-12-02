@@ -87,20 +87,26 @@ public class GrailsPortletHandlerAdapter implements org.springframework.web.port
             Object returnValue = render.call();
             if (returnValue instanceof Map) {
                 renderRequest.setAttribute(GrailsApplicationAttributes.CONTROLLER, portlet);
-                String modeView = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase()
-                        + "/" + renderRequest.getPortletMode().toString().toLowerCase();
-                if (tryResolveView(modeView)) {
-                    log.debug("Trying to render view " + modeView + ".gsp");
-                    return new ModelAndView(modeView, (Map) returnValue);
+                String viewName = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase() +
+                        "/" + renderRequest.getParameter("action") + ".gsp";
+                if (tryResolveView(viewName)) {
+                    log.debug("Trying to render action view " + viewName + ".gsp");
                 } else {
-                    String renderView = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase()
-                            + "/render";
-                    log.debug("Trying to render view " + renderView);
-                    return new ModelAndView(renderView, (Map) returnValue);
+                    log.debug("Couldn't resolve action view " + viewName);
+                    viewName = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase()
+                            + "/" + renderRequest.getPortletMode().toString().toLowerCase();
+                    if (tryResolveView(viewName)) {
+                        log.debug("Trying to render mode view " + viewName + ".gsp");
+                    } else {
+                        log.debug("Couldn't resolve mode view " + viewName);
+                        viewName = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase()
+                                + "/render";
+                        log.debug("Trying to render view " + viewName);
+                    }
+                    return new ModelAndView(viewName, (Map) returnValue);
                 }
-            } else {
-                return null;
             }
+            return null;
         }
     }
 
