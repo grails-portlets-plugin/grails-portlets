@@ -16,17 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application.properties" afterPath="$PROJECT_DIR$/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.iws" afterPath="$PROJECT_DIR$/Portlets Plugin.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/portlets.iml" afterPath="$PROJECT_DIR$/portlets.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Install.groovy" afterPath="$PROJECT_DIR$/scripts/_Install.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/_Upgrade.groovy" afterPath="$PROJECT_DIR$/scripts/_Upgrade.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Events.groovy" afterPath="$PROJECT_DIR$/scripts/Events.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" afterPath="$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.xml" afterPath="$PROJECT_DIR$/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portlets Plugin.ipr" afterPath="$PROJECT_DIR$/Portlets Plugin.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.classpath" afterPath="$PROJECT_DIR$/.classpath" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web-app/WEB-INF/applicationContext.xml" />
     </list>
     <ignored path="Portlets Plugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,32 +41,6 @@
   <component name="DebuggerManager">
     <line_breakpoints>
       <breakpoint url="file://$GRAILS_HOME$/src/commons/org/codehaus/groovy/grails/commons/spring/GrailsWebApplicationContext.java" line="111" class="Class at GrailsWebApplicationContext.java:111" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy" line="55" class="Class at TagLibraryResolver.groovy:55" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="false" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy" line="97" class="Class at TagLibraryResolver.groovy:97" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -134,8 +101,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -156,7 +123,7 @@
       <file leaf-file-name="GrailsPortletHandlerAdapter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="63" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.25671142">
+            <state line="133" column="92" selection-start="6368" selection-end="6368" vertical-scroll-proportion="0.7483221">
               <folding />
             </state>
           </provider>
@@ -192,7 +159,7 @@
       <file leaf-file-name="Events.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="21" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.0">
+            <state line="56" column="51" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -283,7 +250,18 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectPane">
-    <subPane />
+    <subPane>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Portlets Plugin" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="portlets" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </subPane>
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -717,6 +695,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/_Install.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="6" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/_Upgrade.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PortletsGrailsPlugin.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="6" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0">
@@ -738,6 +730,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="51" selection-start="2688" selection-end="2688" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/work/grails-1.1/src/web/org/codehaus/groovy/grails/web/pages/ext/jsp/TagLibraryResolver.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="3869" selection-end="3869" vertical-scroll-proportion="0.0">
@@ -745,30 +744,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Events.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="21" selection-start="2733" selection-end="2733" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/_Upgrade.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/_Install.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/org/codehaus/grails/portlets/GrailsPortletHandlerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="63" selection-start="3631" selection-end="3631" vertical-scroll-proportion="0.25671142">
+        <state line="133" column="92" selection-start="6368" selection-end="6368" vertical-scroll-proportion="0.7483221">
           <folding />
         </state>
       </provider>

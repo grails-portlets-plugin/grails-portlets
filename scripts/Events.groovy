@@ -55,7 +55,6 @@ eventConfigureJetty = {Server server ->
 
     HashUserRealm myrealm = new HashUserRealm("default", "${pluginLibDir}/realm.properties");
     server.setUserRealms([myrealm] as UserRealm[]);
-    println 'jetty'
 }
 
 eventSetClasspath = {

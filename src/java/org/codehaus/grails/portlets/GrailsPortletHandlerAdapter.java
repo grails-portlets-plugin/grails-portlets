@@ -75,9 +75,9 @@ public class GrailsPortletHandlerAdapter implements org.springframework.web.port
     }
 
     public ModelAndView handleRender(RenderRequest renderRequest, RenderResponse renderResponse, Object o) throws Exception {
-        //FIX get this working...
-        if (getMinimisedConfig() != null) {
+        if (getMinimisedConfig() != null && renderRequest.getWindowState().equals(WindowState.MINIMIZED)) {
             log.debug("portlet.handleMinimised is set, rendering empty string");
+            renderResponse.setContentType("text/html");
             renderResponse.getPortletOutputStream().write("".getBytes());
             return null;
         } else {
@@ -112,6 +112,7 @@ public class GrailsPortletHandlerAdapter implements org.springframework.web.port
 
     private Object getMinimisedConfig() {
         try {
+            //TODO allow overriding config setting per portlet
             ConfigObject configObject = (ConfigObject) ConfigurationHolder.getConfig().get("portlet");
             Object value = null;
             if (configObject != null) {
