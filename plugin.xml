@@ -1,6 +1,7 @@
-<plugin name='portlets' version='0.1'>
-    <resources>
-        <resource>UrlMappings</resource>
-    </resources>
-    <dependencies/>
+<plugin name='portlets' version='0.2' grailsVersion='1.1 &gt; *'>
+  <resources>
+    <resource>Config</resource>
+    <resource>UrlMappings</resource>
+  </resources>
+  <dependencies />
 </plugin>

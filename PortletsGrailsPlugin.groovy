@@ -1,4 +1,5 @@
 import org.springframework.web.context.request.RequestContextHolder as RCH
+import org.springframework.web.context.request.RequestAttributes 
 
 import grails.util.GrailsUtil
 import javax.portlet.PortletRequest
@@ -18,11 +19,11 @@ class PortletsGrailsPlugin {
 
     static WEB_APP_NAME = 'Grails Portlet Application'
 
-    def watchedResources = ['file:./grails-app/controllers/**/*Portlet.groovy',
-            'file:./plugins/*/grails-app/controllers/**/*Portlet.groovy'
+    def watchedResources = ['file:./grails-app/portlets/**/*Portlet.groovy',
+            'file:./plugins/*/grails-app/portlets/**/*Portlet.groovy'
     ]
 
-    def version = 0.1
+    def version = 0.2
     def loadAfter = ['controllers']
     def artefacts = [PortletArtefactHandler.class]
 
@@ -83,34 +84,6 @@ class PortletsGrailsPlugin {
                 'load-on-startup'('1')
             }
         }
-
-        if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
-            // TODO refactor pluto specific code out to pluggable embedded portal interface
-            log.info("Creating Pluto servlets for ${watchedResources.length} portlets...")
-            for (Resource portlet in watchedResources) {
-                def portletName = portlet.filename - 'Portlet.groovy'
-                servletElement + {
-                    'servlet'
-                    {
-                        'servlet-name'(portletName)
-                        'servlet-class'('org.apache.pluto.core.PortletServlet')
-                        'init-param'
-                        {
-                            'param-name'('portlet-name')
-                            'param-value'(portletName)
-                        }
-                        'load-on-startup'('1')
-                    }
-                }
-                mappingElement + {
-                    'servlet-mapping'
-                    {
-                        'servlet-name'(portletName)
-                        'url-pattern'("/PlutoInvoker/${portletName}")
-                    }
-                }
-            }
-        }
     }
 
     def doWithDynamicMethods = {ApplicationContext ctx ->
@@ -133,38 +106,37 @@ class PortletsGrailsPlugin {
                 path ? path : ''
             }
 
-            mc.getMode = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getPortletMode()
+            mc.getPortletRequest = { 
+                getFromRequestAttributes('javax.portlet.request')
             }
 
-            mc.getSession = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getPortletSession(true)
+            mc.getPortletResponse = {
+                getFromRequestAttributes('javax.portlet.response')
             }
 
-            mc.getWindowState = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getWindowState()
+            mc.getMode = {
+                def req = getFromRequestAttributes('javax.portlet.request')
+                req.portletMode
             }
 
-            mc.getPortletConfig = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getAttribute(GrailsDispatcherPortlet.PORTLET_CONFIG);
+            mc.getSession = {
+                def req = getFromRequestAttributes('javax.portlet.request')
+                req.portletSession
             }
 
-            mc.getPortalContext = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getPortalContext()
+            mc.getWindowState = {
+                def req = getFromRequestAttributes('javax.portlet.request')
+                req.windowState
             }
 
-            mc.getPreferences = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getPreferences()
+            mc.getPortalContext = {
+                def req = getFromRequestAttributes('javax.portlet.request')
+                req.portalContext
             }
-            mc.getUserInfo = {->
-                def webRequest = RCH.currentRequestAttributes();
-                webRequest.getCurrentRequest().getAttribute(PortletRequest.USER_INFO)
+
+            mc.getPreferences = {
+                def req = getFromRequestAttributes('javax.portlet.request')
+                req.preferences
             }
 
             // deal with abstract super classes
@@ -176,6 +148,13 @@ class PortletsGrailsPlugin {
             }
         }
     }
+
+    private getFromRequestAttributes(key) {
+        def webRequest = RCH.currentRequestAttributes();
+        webRequest.getAttribute(key,
+                        RequestAttributes.SCOPE_REQUEST)
+    }
+
 
     def onChange = {event ->
         def context = event.ctx
@@ -198,6 +177,10 @@ class PortletsGrailsPlugin {
             portletTargetSource.swap(portletClass)
         }
         event.manager?.getGrailsPlugin("portlets")?.doWithDynamicMethods(event.ctx)
+    }
+
+    def generateTomcatContextFile() {
+
     }
 
 }
