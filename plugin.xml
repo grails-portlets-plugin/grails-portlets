@@ -1,4 +1,10 @@
 <plugin name='portlets' version='0.2' grailsVersion='1.1 &gt; *'>
+  <author>Kenji Nakamura</author>
+  <authorEmail>kenji_nakamura@diva-america.com</authorEmail>
+  <title>Portlets Plugin</title>
+  <description>\
+Generate JSR-168 compliant portlet war. 
+</description>
   <resources>
     <resource>Config</resource>
     <resource>UrlMappings</resource>

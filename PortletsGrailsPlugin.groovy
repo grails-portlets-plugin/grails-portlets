@@ -17,15 +17,32 @@ import org.springframework.core.io.Resource
 
 class PortletsGrailsPlugin {
 
+    // the plugin version
+    def version = "0.2"
+    // the version or versions of Grails the plugin is designed for
+    def grailsVersion = "1.1 > *"
+    // the other plugins this plugin depends on
+    def loadAfter = ['controllers']
+
+    def artefacts = [PortletArtefactHandler.class]
+    // resources that are excluded from plugin packaging
+    def pluginExcludes = [
+            "grails-app/views/error.gsp"
+    ]
+
+    def author = "Kenji Nakamura"
+    def authorEmail = "kenji_nakamura@diva-america.com"
+    def title = "Portlets Plugin"
+    def description = '''\\
+Generate JSR-168 compliant portlet war. 
+'''
+
     static WEB_APP_NAME = 'Grails Portlet Application'
 
     def watchedResources = ['file:./grails-app/portlets/**/*Portlet.groovy',
             'file:./plugins/*/grails-app/portlets/**/*Portlet.groovy'
     ]
 
-    def version = 0.2
-    def loadAfter = ['controllers']
-    def artefacts = [PortletArtefactHandler.class]
 
     def doWithSpring = {
         //def controllerPlugin = new ControllersGrailsPlugin()
