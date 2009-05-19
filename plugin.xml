@@ -5,6 +5,7 @@
   <description>\
 Generate JSR-168 compliant portlet war. 
 </description>
+  <documentation>http://grails.org/plugins/portlets</documentation>
   <resources>
     <resource>Config</resource>
     <resource>UrlMappings</resource>

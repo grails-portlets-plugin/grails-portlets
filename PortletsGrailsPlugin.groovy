@@ -37,6 +37,9 @@ class PortletsGrailsPlugin {
 Generate JSR-168 compliant portlet war. 
 '''
 
+    // URL to the plugin's documentation
+    def documentation = "http://grails.org/plugins/portlets"
+
     static WEB_APP_NAME = 'Grails Portlet Application'
 
     def watchedResources = ['file:./grails-app/portlets/**/*Portlet.groovy',
