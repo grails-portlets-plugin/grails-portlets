@@ -2,7 +2,7 @@
 <div>
 <h1>Help Page</h1>
 The map returned by renderView is passed in. Value of mykey: ${mykey}
-<form action="<portlet:actionURL/>">
+<form action="${portletResponse.createActionURL()">
     <input type="submit" value="Done"/>
 </form>
 

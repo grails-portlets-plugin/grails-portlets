@@ -86,6 +86,8 @@ public class GrailsPortletHandlerAdapter implements org.springframework.web.port
             Closure render = getRenderClosure(renderRequest, portlet, action);
             Object returnValue = render.call();
             if (returnValue instanceof Map) {
+                ((Map)returnValue).put("portletRequest", renderRequest);
+                ((Map)returnValue).put("portletResponse", renderResponse);
                 renderRequest.setAttribute(GrailsApplicationAttributes.CONTROLLER, portlet);
                 String viewName = "/" + ((String) renderRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME)).toLowerCase() +
                         "/" + renderRequest.getParameter("action") + ".gsp";
