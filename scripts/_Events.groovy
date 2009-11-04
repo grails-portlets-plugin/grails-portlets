@@ -1,11 +1,5 @@
 import grails.util.GrailsUtil
 import groovy.xml.StreamingMarkupBuilder
-import org.mortbay.jetty.Server
-import org.mortbay.jetty.security.HashUserRealm
-import org.mortbay.jetty.security.UserRealm
-import org.mortbay.jetty.plus.jaas.JAASUserRealm
-import org.mortbay.jetty.servlet.SessionHandler
-import org.mortbay.jetty.webapp.WebAppContext
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver
 
 def portletVersion = '1.0'
