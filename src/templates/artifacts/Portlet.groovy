@@ -1,5 +1,4 @@
 @artifact.package@
-
 import javax.portlet.*
 
 class @artifact.name@ {
@@ -10,9 +9,6 @@ Description about the portlet goes here.
 '''
   def displayName = 'Display Name'
   def supports = ['text/html':['view', 'edit', 'help']]
-
-  // Liferay server specific configurations
-  def liferay_display_category = 'MyCategory'
 
   def actionEdit = {
     //TODO Define action phase
