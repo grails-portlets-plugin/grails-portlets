@@ -38,5 +38,4 @@ target(main: "Creates a new portlet") {
     event("CreatedFile", [viewsDir])
 }
 
-
 setDefaultTarget(main)

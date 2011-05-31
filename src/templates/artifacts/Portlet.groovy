@@ -9,6 +9,10 @@ Description about the portlet goes here.
 '''
   def displayName = 'Display Name'
   def supports = ['text/html':['view', 'edit', 'help']]
+  
+  // Used for liferay
+  // @see http://www.liferay.com/documentation/liferay-portal/6.0/development/-/ai/anatomy-of-a-portlet
+  // def liferay_display_category = "category.sample"
 
   def actionEdit = {
     //TODO Define action phase
