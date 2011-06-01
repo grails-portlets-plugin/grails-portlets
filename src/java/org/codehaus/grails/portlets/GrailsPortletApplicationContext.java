@@ -29,7 +29,7 @@ public class GrailsPortletApplicationContext extends GrailsWebApplicationContext
       try {
          this.setServletContext(portletContainerAdapter.getServletContext(portletContext));
       } catch (UnsupportedOperationException e) {
-         logger.warn("Couldn't obotain the underlying servletContext and set to the superclass GrailsWebApplicationContext.");
+         logger.warn("Couldn't obtain the underlying servletContext and set to the superclass GrailsWebApplicationContext.");
       }
    }
 
@@ -47,7 +47,7 @@ public class GrailsPortletApplicationContext extends GrailsWebApplicationContext
       try {
          this.setServletConfig(portletContainerAdapter.getServletConfig(portletConfig));
       } catch (UnsupportedOperationException e) {
-         logger.warn("Couldn't obotain the underlying servletConfig and set to the superclass GrailsWebApplicationContext.");
+         logger.warn("Couldn't obtain the underlying servletConfig and set to the superclass GrailsWebApplicationContext.");
       }
    }
 
