@@ -8,7 +8,6 @@ import org.codehaus.groovy.grails.commons.AbstractInjectableGrailsClass;
 public class DefaultGrailsPortletClass extends AbstractInjectableGrailsClass
    implements GrailsPortletClass {
 
-
    public DefaultGrailsPortletClass(Class clazz) {
       super(clazz, "Portlet");
    }

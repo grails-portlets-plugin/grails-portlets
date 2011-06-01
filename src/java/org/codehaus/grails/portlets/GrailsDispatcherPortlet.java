@@ -10,6 +10,7 @@ import javax.portlet.*;
 public class GrailsDispatcherPortlet extends DispatcherPortlet {
    public static final String PORTLET_NAME = "grails.portlet.name";
    public static final String PORTLET_CONFIG = "grails.portlet.config";
+   public static final String PORTLET_CLASS_PARAM = "grailsPortletClass";
 
    protected void doActionService(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
       addPortletInfoToRequest(actionRequest);

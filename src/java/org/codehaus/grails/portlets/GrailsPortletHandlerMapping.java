@@ -5,6 +5,7 @@ import org.springframework.web.portlet.HandlerExecutionChain;
 import org.springframework.web.portlet.HandlerMapping;
 import org.springframework.web.portlet.handler.AbstractHandlerMapping;
 
+import javax.portlet.PortletConfig;
 import javax.portlet.PortletRequest;
 
 /**
@@ -14,8 +15,14 @@ public class GrailsPortletHandlerMapping extends
    AbstractHandlerMapping implements HandlerMapping {
 
    protected Object getHandlerInternal(PortletRequest portletRequest) throws Exception {
-      String portletName = (String) portletRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME);
-      GroovyObject portlet = (GroovyObject) getApplicationContext().getBean(portletName + "Portlet");
+
+      PortletConfig portletConfig = (PortletConfig) portletRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_CONFIG);
+      String portletName = portletConfig.getInitParameter(GrailsDispatcherPortlet.PORTLET_CLASS_PARAM);
+      if (portletName == null) {
+         portletName = portletRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME) + "Portlet";
+      }
+
+      GroovyObject portlet = (GroovyObject) getApplicationContext().getBean(portletName);
       return new HandlerExecutionChain(portlet);
    }
 }
