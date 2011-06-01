@@ -1,8 +1,5 @@
 package org.codehaus.grails.portlets;
 
-import org.codehaus.groovy.grails.commons.GrailsApplication;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.portlet.DispatcherPortlet;
 
 import javax.portlet.*;
@@ -13,10 +10,6 @@ import javax.portlet.*;
 public class GrailsDispatcherPortlet extends DispatcherPortlet {
    public static final String PORTLET_NAME = "grails.portlet.name";
    public static final String PORTLET_CONFIG = "grails.portlet.config";
-
-   private GrailsApplication application;
-
-   private final Logger log = LoggerFactory.getLogger(GrailsDispatcherPortlet.class);
 
    protected void doActionService(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
       addPortletInfoToRequest(actionRequest);
