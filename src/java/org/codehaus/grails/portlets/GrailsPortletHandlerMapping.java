@@ -17,7 +17,10 @@ public class GrailsPortletHandlerMapping extends
    protected Object getHandlerInternal(PortletRequest portletRequest) throws Exception {
 
       PortletConfig portletConfig = (PortletConfig) portletRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_CONFIG);
-      String portletName = portletConfig.getInitParameter(GrailsDispatcherPortlet.PORTLET_CLASS_PARAM);
+      String portletName = null;
+      if (portletConfig != null) {
+    	  portletName = portletConfig.getInitParameter(GrailsDispatcherPortlet.PORTLET_CLASS_PARAM);
+      }
       if (portletName == null) {
          portletName = portletRequest.getAttribute(GrailsDispatcherPortlet.PORTLET_NAME) + "Portlet";
       }

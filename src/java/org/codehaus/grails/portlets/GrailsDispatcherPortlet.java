@@ -12,15 +12,29 @@ public class GrailsDispatcherPortlet extends DispatcherPortlet {
    public static final String PORTLET_CONFIG = "grails.portlet.config";
    public static final String PORTLET_CLASS_PARAM = "grailsPortletClass";
 
+   @Override
    protected void doActionService(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
       addPortletInfoToRequest(actionRequest);
       super.doActionService(actionRequest, actionResponse);
    }
 
+   @Override
+   protected void doEventService(EventRequest eventRequest, EventResponse eventResponse) throws Exception {
+	   addPortletInfoToRequest(eventRequest);
+	   super.doEventService(eventRequest, eventResponse);
+    }
+   
+   @Override
    protected void doRenderService(RenderRequest renderRequest, RenderResponse renderResponse) throws Exception {
       addPortletInfoToRequest(renderRequest);
       super.doRenderService(renderRequest, renderResponse);
    }
+   
+   @Override
+   protected void doResourceService(ResourceRequest resourceRequest, ResourceResponse resourceResponse) throws Exception {
+	   addPortletInfoToRequest(resourceRequest);
+	   super.doResourceService(resourceRequest, resourceResponse);
+    }
 
    private void addPortletInfoToRequest(PortletRequest portletRequest) {
       addPortletNameToRequest(portletRequest);
