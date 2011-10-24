@@ -44,7 +44,7 @@ Description about the portlet goes here.
 			html {
 				head()
 				body {
-					Render me!!
+					"Render me!!"
 				}
 			}
 		}

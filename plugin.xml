@@ -1,4 +1,4 @@
-<plugin name='portlets' version='0.9' grailsVersion='1.3 &gt; *'>
+<plugin name='portlets' version='0.9.1' grailsVersion='1.3 &gt; *'>
   <author>Kenji Nakamura</author>
   <authorEmail>kenji_nakamura@diva-america.com</authorEmail>
   <title>Portlets Plugin</title>
