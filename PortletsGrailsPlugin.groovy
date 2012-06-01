@@ -110,8 +110,13 @@ def watchedResources = [
          MetaClass mc = portlet.metaClass
          Class portletClass = portlet.clazz
          WebMetaUtils.registerCommonWebProperties(mc, application)
-         def controllersPlugin = new ControllersGrailsPlugin()
-         controllersPlugin.registerControllerMethods(mc, ctx)
+         //def controllersPlugin = new ControllersGrailsPlugin()
+         //controllersPlugin.registerControllerMethods(mc, ctx)
+		 
+		 def enhancer = new MetaClassEnhancer()
+		 enhancer.addApi(new ControllersApi(getManager()))
+		 enhancer.enhance mc
+		 
          Class superClass = portletClass.superclass
 
          mc.getPluginContextPath = {->
@@ -157,7 +162,10 @@ def watchedResources = [
          while (superClass != Object.class) {
             if (Modifier.isAbstract(superClass.getModifiers())) {
                WebMetaUtils.registerCommonWebProperties(superClass.metaClass, application)
-               controllersPlugin.registerControllerMethods(superClass.metaClass, ctx)
+               //controllersPlugin.registerControllerMethods(superClass.metaClass, ctx)
+			   def enhancer = new MetaClassEnhancer()
+			   enhancer.addApi(new ControllersApi(getManager()))
+			   enhancer.enhance superClass.metaClass
             }
          }
       }
