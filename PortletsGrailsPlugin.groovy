@@ -1,8 +1,11 @@
+import java.lang.reflect.Modifier
+
 import org.springframework.web.context.request.RequestContextHolder as RCH
 
 import org.codehaus.groovy.grails.commons.GrailsClass
+import org.codehaus.groovy.grails.commons.metaclass.MetaClassEnhancer
 import org.codehaus.groovy.grails.plugins.PluginMetaManager
-import org.codehaus.groovy.grails.plugins.web.ControllersGrailsPlugin
+import org.codehaus.groovy.grails.plugins.web.api.ControllersApi
 import org.codehaus.groovy.grails.web.metaclass.BindDynamicMethod
 import org.codehaus.groovy.grails.web.plugins.support.WebMetaUtils
 import org.springframework.aop.framework.ProxyFactoryBean
@@ -163,7 +166,7 @@ def watchedResources = [
             if (Modifier.isAbstract(superClass.getModifiers())) {
                WebMetaUtils.registerCommonWebProperties(superClass.metaClass, application)
                //controllersPlugin.registerControllerMethods(superClass.metaClass, ctx)
-			   def enhancer = new MetaClassEnhancer()
+			   enhancer = new MetaClassEnhancer()
 			   enhancer.addApi(new ControllersApi(getManager()))
 			   enhancer.enhance superClass.metaClass
             }
