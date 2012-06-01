@@ -18,9 +18,9 @@ import org.codehaus.grails.portlets.*
 class PortletsGrailsPlugin {
 
     // the plugin version
-    def version = "0.9.1"
+    def version = "0.9.2"
     // the version or versions of Grails the plugin is designed for
-    def grailsVersion = "1.3 > *"
+    def grailsVersion = "2.0 > *"
     // the other plugins this plugin depends on
     def loadAfter = ['controllers']
 
@@ -30,7 +30,7 @@ class PortletsGrailsPlugin {
             "grails-app/views/error.gsp"
     ]
 
-    def author = "Kenji Nakamura"
+    def author = "Kenji Nakamura, Philip Wu"
     def authorEmail = "kenji_nakamura@diva-america.com"
     def title = "Portlets Plugin"
     def description = '''\\
