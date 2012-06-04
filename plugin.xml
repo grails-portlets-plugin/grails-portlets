@@ -9,11 +9,11 @@ Generate JSR-168 compliant portlet war.
   <type>PortletsGrailsPlugin</type>
   <resources />
   <repositories>
-    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
     <repository name='grailsCentral' url='http://plugins.grails.org' />
     <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
     <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
     <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
   </repositories>
   <dependencies>
     <provided>
