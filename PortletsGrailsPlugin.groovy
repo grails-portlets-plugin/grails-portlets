@@ -72,10 +72,7 @@ def watchedResources = [
          interceptors = [ref("portletHandlerInterceptor")]
       }
       portletHandlerAdapter(GrailsPortletHandlerAdapter)
-      portletReloadFilter(PortletReloadFilter)
-      portletHandlerInterceptor(GrailsPortletHandlerInterceptor) {
-         portletReloadFilter = ref(portletReloadFilter)
-      }
+      portletHandlerInterceptor(GrailsPortletHandlerInterceptor)
    }
 
    def doWithWebDescriptor = {webXml ->

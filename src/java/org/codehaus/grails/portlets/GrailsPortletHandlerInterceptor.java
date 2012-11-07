@@ -1,6 +1,5 @@
 package org.codehaus.grails.portlets;
 
-import grails.util.GrailsUtil;
 import org.codehaus.grails.portlets.container.AbstractPortletContainerAdapter;
 import org.codehaus.grails.portlets.container.PortletContainerAdapter;
 import org.codehaus.groovy.grails.web.servlet.GrailsApplicationAttributes;
@@ -23,16 +22,12 @@ import javax.servlet.http.HttpServletRequest;
 public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter
         implements ServletContextAware {
 	private ServletContext servletContext;
-	private PortletReloadFilter portletReloadFilter;
 
 	@Override
 	protected boolean preHandle(PortletRequest request,
 	        PortletResponse response, Object handler) throws Exception {
 		LocaleContextHolder.setLocale(request.getLocale());
 		convertRequestToGrailsWebRequest(request, response);
-		if (GrailsUtil.isDevelopmentEnv()) {
-			runReloadFilter(request, response);
-		}
 		return true;
 	}
 
@@ -68,21 +63,7 @@ public class GrailsPortletHandlerInterceptor extends HandlerInterceptorAdapter
 		        webRequest);
 	}
 
-	private void runReloadFilter(PortletRequest actionRequest,
-	        PortletResponse actionResponse) {
-		portletReloadFilter.setServletContext(servletContext);
-		portletReloadFilter.doFilterInternal(actionRequest, actionResponse);
-	}
-
 	public void setServletContext(ServletContext servletContext) {
 		this.servletContext = servletContext;
-	}
-
-	public void setPortletReloadFilter(PortletReloadFilter portletReloadFilter) {
-		this.portletReloadFilter = portletReloadFilter;
-	}
-
-	public PortletReloadFilter getPortletReloadFilter() {
-		return portletReloadFilter;
 	}
 }
