@@ -12,6 +12,4 @@ public class PortletArtefactHandler extends ArtefactHandlerAdapter {
    public PortletArtefactHandler() {
       super(TYPE, GrailsPortletClass.class, DefaultGrailsPortletClass.class, TYPE);
    }
-
-
 }

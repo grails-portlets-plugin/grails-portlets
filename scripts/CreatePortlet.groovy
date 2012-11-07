@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-import org.codehaus.groovy.grails.commons.*
-import org.codehaus.groovy.grails.scaffolding.*
-
 /**
- * Gant script that creates a new Grails portlet
+ * Creates a new Grails portlet.
  * 
  * @author Kenji Nakamura
  */
-includeTargets << grailsScript("Init")
 includeTargets << grailsScript("_GrailsCreateArtifacts")
 includeTargets << grailsScript("_GrailsBootstrap")
 
-target(main: "Creates a new portlet") {
-    depends(checkVersion, parseArguments)
-    def type = "Portlet"
-    promptForName(type: type)
-    def name = argsMap["params"][0]
-  	createArtifact(name: name, suffix: type, type: type, path: "grails-app/portlets")
-  	createUnitTest(name: name, suffix: type, superClass: "ControllerUnitTestCase")
-    def viewsDir = "${basedir}/grails-app/views/${propertyName}"
-    ant.mkdir(dir:viewsDir)
-    event("CreatedFile", [viewsDir])
+target(createPortlet: "Creates a new portlet") {
+	depends(checkVersion, parseArguments)
+
+	String type = "Portlet"
+	promptForName(type: type)
+
+	String name = argsMap.params[0]
+	createArtifact(name: name, suffix: type, type: type, path: "grails-app/portlets")
+	createUnitTest(name: name, suffix: type, superClass: "ControllerUnitTestCase")
+
+	String viewsDir = "${basedir}/grails-app/views/${propertyName}"
+	ant.mkdir(dir:viewsDir)
+
+	event("CreatedFile", [viewsDir])
 }
 
-setDefaultTarget(main)
+setDefaultTarget(createPortlet)

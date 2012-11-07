@@ -1,14 +1,14 @@
 package org.codehaus.grails.portlets;
 
+import javax.portlet.PortletConfig;
+import javax.portlet.PortletContext;
+
 import org.codehaus.grails.portlets.container.AbstractPortletContainerAdapter;
 import org.codehaus.grails.portlets.container.PortletContainerAdapter;
 import org.codehaus.groovy.grails.commons.spring.GrailsWebApplicationContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.portlet.context.ConfigurablePortletApplicationContext;
-
-import javax.portlet.PortletConfig;
-import javax.portlet.PortletContext;
 
 /**
  * @author Lee Butts
@@ -27,7 +27,7 @@ public class GrailsPortletApplicationContext extends GrailsWebApplicationContext
       this.portletContext = portletContext;
       initPortletContainerAdapter(portletContext);
       try {
-         this.setServletContext(portletContainerAdapter.getServletContext(portletContext));
+         setServletContext(portletContainerAdapter.getServletContext(portletContext));
       } catch (UnsupportedOperationException e) {
          logger.warn("Couldn't obtain the underlying servletContext and set to the superclass GrailsWebApplicationContext.");
       }
@@ -45,7 +45,7 @@ public class GrailsPortletApplicationContext extends GrailsWebApplicationContext
       this.portletConfig = portletConfig;
       initPortletContainerAdapter(portletContext);
       try {
-         this.setServletConfig(portletContainerAdapter.getServletConfig(portletConfig));
+         setServletConfig(portletContainerAdapter.getServletConfig(portletConfig));
       } catch (UnsupportedOperationException e) {
          logger.warn("Couldn't obtain the underlying servletConfig and set to the superclass GrailsWebApplicationContext.");
       }
