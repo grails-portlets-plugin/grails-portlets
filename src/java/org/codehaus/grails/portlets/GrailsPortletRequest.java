@@ -1,11 +1,11 @@
 package org.codehaus.grails.portlets;
 
-import org.codehaus.grails.portlets.container.AbstractPortletContainerAdapter;
-import org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequest;
-
 import javax.portlet.PortletRequest;
 import javax.portlet.PortletResponse;
 import javax.servlet.ServletContext;
+
+import org.codehaus.grails.portlets.container.AbstractPortletContainerAdapter;
+import org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequest;
 
 /**
  * @author Kenji Nakamura
@@ -23,5 +23,4 @@ public class GrailsPortletRequest extends GrailsWebRequest {
    public PortletRequest getPortletRequest() {
       return portletRequest;
    }
-
 }

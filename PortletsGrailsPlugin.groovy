@@ -1,10 +1,12 @@
 import java.lang.reflect.Modifier
 
-import org.springframework.web.context.request.RequestContextHolder as RCH
-
+import org.codehaus.grails.portlets.GrailsPortletClass
+import org.codehaus.grails.portlets.GrailsPortletHandlerAdapter
+import org.codehaus.grails.portlets.GrailsPortletHandlerInterceptor
+import org.codehaus.grails.portlets.GrailsPortletHandlerMapping
+import org.codehaus.grails.portlets.PortletArtefactHandler
 import org.codehaus.groovy.grails.commons.GrailsClass
 import org.codehaus.groovy.grails.commons.metaclass.MetaClassEnhancer
-import org.codehaus.groovy.grails.plugins.PluginMetaManager
 import org.codehaus.groovy.grails.plugins.web.api.ControllersApi
 import org.codehaus.groovy.grails.web.metaclass.BindDynamicMethod
 import org.codehaus.groovy.grails.web.plugins.support.WebMetaUtils
@@ -13,199 +15,163 @@ import org.springframework.aop.target.HotSwappableTargetSource
 import org.springframework.beans.factory.config.MethodInvokingFactoryBean
 import org.springframework.context.ApplicationContext
 import org.springframework.web.context.request.RequestAttributes
-import org.codehaus.grails.portlets.*
+import org.springframework.web.context.request.RequestContextHolder as RCH
 
 class PortletsGrailsPlugin {
 
-    // the plugin version
     def version = "0.9.2"
-    // the version or versions of Grails the plugin is designed for
     def grailsVersion = "2.0 > *"
-    // the other plugins this plugin depends on
     def loadAfter = ['controllers']
+    def artefacts = [PortletArtefactHandler]
 
-    def artefacts = [PortletArtefactHandler.class]
-    // resources that are excluded from plugin packaging
-    def pluginExcludes = [
-            "grails-app/views/error.gsp"
-    ]
-
-    def author = "Kenji Nakamura, Philip Wu"
+    def author = "Kenji Nakamura"
     def authorEmail = "kenji_nakamura@diva-america.com"
     def title = "Portlets Plugin"
-    def description = '''\\
-Generate JSR-168 compliant portlet war. 
-'''
-
-    // URL to the plugin's documentation
+    def description = 'Generate JSR-168 compliant portlet war.'
     def documentation = "http://grails.org/plugins/portlets"
 
-    static WEB_APP_NAME = 'Grails Portlet Application'
+    String license = 'MIT'
+    def issueManagement = [system: 'JIRA', url: 'http://jira.grails.org/browse/GPPORTLETS']
+    def scm = [url: 'https://github.com/grails-portlets-plugin/grails-portlets']
+    def developers = [[name: 'Philip Wu', email: 'wu.phil@gmail.com']]
 
-def watchedResources = [
-           'file:./grails-app/portlets/**/*Portlet.groovy',
-           'file:./plugins/*/grails-app/portlets/**/*Portlet.groovy'
-   ]
+    def watchedResources = [
+        'file:./grails-app/portlets/**/*Portlet.groovy',
+        'file:./plugins/*/grails-app/portlets/**/*Portlet.groovy'
+    ]
 
-   def doWithSpring = {
+    static final String WEB_APP_NAME = 'Grails Portlet Application'
 
-      application.portletClasses.each {portlet ->
-         log.debug "Configuring portlet $portlet.fullName"
+    def doWithSpring = {
 
-         "${portlet.fullName}Class"(MethodInvokingFactoryBean) {
-            targetObject = ref("grailsApplication", true)
-            targetMethod = "getArtefact"
-            arguments = [PortletArtefactHandler.TYPE, portlet.fullName]
-         }
-         "${portlet.fullName}TargetSource"(HotSwappableTargetSource, ref("${portlet.fullName}Class"))
+        application.portletClasses.each { portlet ->
+            log.debug "Configuring portlet $portlet.fullName"
 
-         "${portlet.fullName}Proxy"(ProxyFactoryBean) {
-            targetSource = ref("${portlet.fullName}TargetSource")
-            proxyInterfaces = [GrailsPortletClass.class]
-         }
-         "${portlet.fullName}"("${portlet.fullName}Proxy": "newInstance") {bean ->
-            bean.singleton = false
-            bean.autowire = "byName"
-         }
-      }
-      portletHandlerMappings(GrailsPortletHandlerMapping) {
-         interceptors = [ref("portletHandlerInterceptor")]
-      }
-      portletHandlerAdapter(GrailsPortletHandlerAdapter)
-      portletReloadFilter(PortletReloadFilter)
-      portletHandlerInterceptor(GrailsPortletHandlerInterceptor) {
-         portletReloadFilter = ref(portletReloadFilter)
-      }
-   }
-
-   def doWithWebDescriptor = {webXml ->
-      def mappingElement = webXml.'servlet-mapping'
-      mappingElement = mappingElement[mappingElement.size() - 1]
-
-      mappingElement + {
-         'servlet-mapping'
-         {
-            'servlet-name'('view-servlet')
-            'url-pattern'('/WEB-INF/servlet/view')
-         }
-      }
-
-      def servletElement = webXml.'servlet'
-      servletElement = servletElement[servletElement.size() - 1]
-
-      servletElement + {
-         'servlet'
-         {
-            'servlet-name'('view-servlet')
-            'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
-            'load-on-startup'('1')
-         }
-      }
-   }
-
-   def doWithDynamicMethods = {ApplicationContext ctx ->
-      def registry = GroovySystem.getMetaClassRegistry()
-
-      def bind = new BindDynamicMethod()
-
-      // add commons objects and dynamic methods like render and redirect to portlets
-      for (GrailsClass portlet in application.portletClasses) {
-         MetaClass mc = portlet.metaClass
-         Class portletClass = portlet.clazz
-         WebMetaUtils.registerCommonWebProperties(mc, application)
-         //def controllersPlugin = new ControllersGrailsPlugin()
-         //controllersPlugin.registerControllerMethods(mc, ctx)
-		 
-		 def enhancer = new MetaClassEnhancer()
-		 enhancer.addApi(new ControllersApi(getManager()))
-		 enhancer.enhance mc
-		 
-         Class superClass = portletClass.superclass
-
-         mc.getPluginContextPath = {->
-            PluginMetaManager metaManager = ctx.pluginMetaManager
-            String path = metaManager.getPluginPathForResource(delegate.class.name)
-            path ? path : ''
-         }
-
-         mc.getPortletRequest = {
-            getFromRequestAttributes('javax.portlet.request')
-         }
-
-         mc.getPortletResponse = {
-            getFromRequestAttributes('javax.portlet.response')
-         }
-
-         mc.getMode = {
-            def req = getFromRequestAttributes('javax.portlet.request')
-            req.portletMode
-         }
-
-         mc.getSession = {
-            def req = getFromRequestAttributes('javax.portlet.request')
-            req.portletSession
-         }
-
-         mc.getWindowState = {
-            def req = getFromRequestAttributes('javax.portlet.request')
-            req.windowState
-         }
-
-         mc.getPortalContext = {
-            def req = getFromRequestAttributes('javax.portlet.request')
-            req.portalContext
-         }
-
-         mc.getPreferences = {
-            def req = getFromRequestAttributes('javax.portlet.request')
-            req.preferences
-         }
-
-         // deal with abstract super classes
-         while (superClass != Object.class) {
-            if (Modifier.isAbstract(superClass.getModifiers())) {
-               WebMetaUtils.registerCommonWebProperties(superClass.metaClass, application)
-               //controllersPlugin.registerControllerMethods(superClass.metaClass, ctx)
-			   enhancer = new MetaClassEnhancer()
-			   enhancer.addApi(new ControllersApi(getManager()))
-			   enhancer.enhance superClass.metaClass
+            "${portlet.fullName}Class"(MethodInvokingFactoryBean) {
+                targetObject = ref("grailsApplication", true)
+                targetMethod = "getArtefact"
+                arguments = [PortletArtefactHandler.TYPE, portlet.fullName]
             }
-         }
-      }
-   }
+            "${portlet.fullName}TargetSource"(HotSwappableTargetSource, ref("${portlet.fullName}Class"))
 
-   private getFromRequestAttributes(key) {
-      def webRequest = RCH.currentRequestAttributes();
-      webRequest.getAttribute(key,
-              RequestAttributes.SCOPE_REQUEST)
-   }
+            "${portlet.fullName}Proxy"(ProxyFactoryBean) {
+                targetSource = ref("${portlet.fullName}TargetSource")
+                proxyInterfaces = [GrailsPortletClass]
+            }
+            "${portlet.fullName}"("${portlet.fullName}Proxy": "newInstance") {bean ->
+                bean.singleton = false
+                bean.autowire = "byName"
+            }
+        }
 
-   def onChange = {event ->
-      def context = event.ctx
-      if (!context) {
-         if (log.isDebugEnabled())
+        portletHandlerMappings(GrailsPortletHandlerMapping) {
+            interceptors = [ref("portletHandlerInterceptor")]
+        }
+
+        portletHandlerAdapter(GrailsPortletHandlerAdapter)
+
+        portletHandlerInterceptor(GrailsPortletHandlerInterceptor)
+    }
+
+    def doWithWebDescriptor = {webXml ->
+        def mappingElement = webXml.'servlet-mapping'
+        mappingElement = mappingElement[mappingElement.size() - 1]
+
+        mappingElement + {
+            'servlet-mapping' {
+                'servlet-name'('view-servlet')
+                'url-pattern'('/WEB-INF/servlet/view')
+            }
+        }
+
+        def servletElement = webXml.'servlet'
+        servletElement = servletElement[servletElement.size() - 1]
+
+        servletElement + {
+            'servlet' {
+                'servlet-name'('view-servlet')
+                'servlet-class'('org.springframework.web.servlet.ViewRendererServlet')
+                'load-on-startup'('1')
+            }
+        }
+    }
+
+    def doWithDynamicMethods = {ApplicationContext ctx ->
+        def registry = GroovySystem.getMetaClassRegistry()
+
+        def bind = new BindDynamicMethod()
+
+        // add commons objects and dynamic methods like render and redirect to portlets
+        for (GrailsClass portlet in application.portletClasses) {
+            MetaClass mc = portlet.metaClass
+            Class portletClass = portlet.clazz
+            WebMetaUtils.registerCommonWebProperties(mc, application)
+            //def controllersPlugin = new ControllersGrailsPlugin()
+            //controllersPlugin.registerControllerMethods(mc, ctx)
+
+            def enhancer = new MetaClassEnhancer()
+            enhancer.addApi(new ControllersApi(getManager()))
+            enhancer.enhance mc
+
+            Class superClass = portletClass.superclass
+
+            mc.getPluginContextPath = { ->
+                ctx.pluginMetaManager.getPluginPathForResource(delegate.getClass().name) ?: ''
+            }
+
+            mc.getPortletRequest = { -> getFromRequestAttributes('javax.portlet.request') }
+
+            mc.getPortletResponse = { -> getFromRequestAttributes('javax.portlet.response') }
+
+            mc.getMode = { -> getPortletRequest().portletMode }
+
+            mc.getSession = { -> getPortletRequest().portletSession }
+
+            mc.getWindowState = { -> getPortletRequest().windowState }
+
+            mc.getPortalContext = { -> getPortletRequest().portalContext }
+
+            mc.getPreferences = { -> getPortletRequest().preferences }
+
+            // deal with abstract super classes
+            while (superClass != Object) {
+                if (Modifier.isAbstract(superClass.getModifiers())) {
+                    WebMetaUtils.registerCommonWebProperties(superClass.metaClass, application)
+                    //controllersPlugin.registerControllerMethods(superClass.metaClass, ctx)
+                    enhancer = new MetaClassEnhancer()
+                    enhancer.addApi(new ControllersApi(getManager()))
+                    enhancer.enhance superClass.metaClass
+                }
+            }
+        }
+    }
+
+    private getFromRequestAttributes(key) {
+        RCH.currentRequestAttributes().getAttribute(key, RequestAttributes.SCOPE_REQUEST)
+    }
+
+    def onChange = { event ->
+        def context = event.ctx
+        if (!context) {
             log.debug("Application context not found. Can't reload")
-         return
-      }
-      boolean isNew = application.getPortletClass(event.source?.name) ? false : true
-      def portletClass = application.addArtefact(PortletArtefactHandler.TYPE, event.source)
+            return
+        }
 
-      if (isNew) {
-         log.info "Portlet ${event.source} found. You need to restart for the change to be applied"
-      }
-      else {
-         if (log.isDebugEnabled()) {
+        boolean isNew = application.getPortletClass(event.source?.name) ? false : true
+        def portletClass = application.addArtefact(PortletArtefactHandler.TYPE, event.source)
+
+        if (isNew) {
+            log.info "Portlet ${event.source} found. You need to restart for the change to be applied"
+        }
+        else {
             log.debug("Portlet ${event.source} changed. Reloading...")
-         }
 
-         def portletTargetSource = context.getBean("${portletClass.fullName}TargetSource")
-         portletTargetSource.swap(portletClass)
-      }
-      event.manager?.getGrailsPlugin("portlets")?.doWithDynamicMethods(event.ctx)
-   }
+            context.getBean("${portletClass.fullName}TargetSource").swap(portletClass)
+        }
+        event.manager?.getGrailsPlugin("portlets")?.doWithDynamicMethods(event.ctx)
+    }
 
     def generateTomcatContextFile() {
 
     }
-
 }

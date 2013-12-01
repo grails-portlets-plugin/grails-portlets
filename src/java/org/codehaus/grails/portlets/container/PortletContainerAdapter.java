@@ -26,7 +26,7 @@ public interface PortletContainerAdapter {
     * @throws UnsupportedOperationException thrown when there is no way to retrieve the context from the
     *                                       portlet context
     */
-   public ServletContext getServletContext(PortletContext context) throws UnsupportedOperationException;
+   ServletContext getServletContext(PortletContext context) throws UnsupportedOperationException;
 
    /**
     * Returns the underlying ServletConfig
@@ -35,7 +35,7 @@ public interface PortletContainerAdapter {
     * @return
     * @throws UnsupportedOperationException thrown when the operation is not possible with the underlying portlet container
     */
-   public ServletConfig getServletConfig(PortletConfig config) throws UnsupportedOperationException;
+   ServletConfig getServletConfig(PortletConfig config) throws UnsupportedOperationException;
 
    /**
     * Returns the underlying HttpServletRequest.
@@ -44,8 +44,7 @@ public interface PortletContainerAdapter {
     * @return http servlet request
     * @throws UnsupportedOperationException thrown when the operation is not possible with the underlying portlet container
     */
-   public HttpServletRequest getHttpServletRequest(PortletRequest portletRequest) throws UnsupportedOperationException;
-
+   HttpServletRequest getHttpServletRequest(PortletRequest portletRequest) throws UnsupportedOperationException;
 
    /**
     * Returns the underlying HttpServletResponse.
@@ -54,6 +53,5 @@ public interface PortletContainerAdapter {
     * @return http servlet request
     * @throws UnsupportedOperationException thrown when the operation is not possible with the underlying portlet container
     */
-   public HttpServletResponse getHttpServletResponse(PortletResponse portletResponse) throws UnsupportedOperationException;
-
+   HttpServletResponse getHttpServletResponse(PortletResponse portletResponse) throws UnsupportedOperationException;
 }

@@ -7,9 +7,7 @@ import org.springframework.context.ApplicationContextAware;
 /**
  * @author Kenji Nakamura
  */
-public abstract class AbstractPortletContainerAdapter
-   implements PortletContainerAdapter,
-   ApplicationContextAware {
+public abstract class AbstractPortletContainerAdapter implements PortletContainerAdapter, ApplicationContextAware {
 
    private static ApplicationContext ctx;
 
@@ -21,12 +19,10 @@ public abstract class AbstractPortletContainerAdapter
     * @return an implemntation of this class suitable for the underlying portlet container.
     */
    public static PortletContainerAdapter getInstance(Object obj) {
-      PortletContainerAdapter portletContainerAdapter = null;
       return (PortletContainerAdapter) ctx.getBean("portletContainerAdapter");
    }
 
-   public void setApplicationContext(ApplicationContext applicationContext)
-      throws BeansException {
-      this.ctx = applicationContext;
+   public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+      ctx = applicationContext;
    }
 }
