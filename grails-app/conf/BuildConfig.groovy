@@ -23,8 +23,6 @@ grails.project.dependency.resolution = {
 			excludes 'spring-web'
 			excludes 'spring-webmvc'
 		}
-
-		compile 'org.aspectj:aspectjtools:1.6.10'
 	}
 
 	plugins {
